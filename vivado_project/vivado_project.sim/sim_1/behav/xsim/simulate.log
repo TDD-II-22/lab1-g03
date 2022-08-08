@@ -1,7 +1,0 @@
-Vivado Simulator 2019.1
-Time resolution is 1 ps
-<<<<<<< HEAD
-$finish called at time : 45 ns : File "D:/VIVADO/GR3/lab1-g03/Source/Simulations/tb_mux_4a1.sv" Line 68
-=======
-$finish called at time : 45 ns : File "C:/TDD/lab1-g03/Source/Simulations/tb_mux_4a1.sv" Line 68
->>>>>>> 0b3d66b8835fb0f63ad038375af5bbe1f43b6db6

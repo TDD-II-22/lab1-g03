@@ -1,12 +1,4 @@
-Running: xsim.dir/tb_module_mux4a1_behav/xsimk.exe -simmode gui -wdb tb_module_mux4a1_behav.wdb -simrunnum 0 -socket 62452
+Running: xsim.dir/tb_module_mux4a1_behav/xsimk.exe -simmode gui -wdb tb_module_mux4a1_behav.wdb -simrunnum 0 -socket 52777
 Design successfully loaded
-Design Loading Memory Usage: 6492 KB (Peak: 6492 KB)
-Design Loading CPU Usage: 15 ms
-Simulation completed
-<<<<<<< HEAD
-Simulation Memory Usage: 7140 KB (Peak: 7140 KB)
-Simulation CPU Usage: 31 ms
-=======
-Simulation Memory Usage: 6448 KB (Peak: 6448 KB)
-Simulation CPU Usage: 187 ms
->>>>>>> 0b3d66b8835fb0f63ad038375af5bbe1f43b6db6
+Design Loading Memory Usage: 5880 KB (Peak: 5880 KB)
+Design Loading CPU Usage: 31 ms
