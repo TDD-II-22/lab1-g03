@@ -2,6 +2,6 @@
 2019.1
 May 24 2019
 15:06:07
-D:/VIVADO/GR3/lab1-g03/Source/Design/mux_4a1.sv,1659919504,systemVerilog,,D:/VIVADO/GR3/lab1-g03/Source/Simulations/tb_mux_4a1.sv,,module_mux4a1,,,,,,,,
-D:/VIVADO/GR3/lab1-g03/Source/Simulations/tb_mux_4a1.sv,1659919504,systemVerilog,,,,tb_module_mux4a1,,,,,,,,
+D:/VIVADO/GR3/lab1-g03/Source/Design/mux_4a1.sv,1659930083,systemVerilog,,D:/VIVADO/GR3/lab1-g03/Source/Simulations/tb_mux_4a1.sv,,module_mux4a1,,,,,,,,
+D:/VIVADO/GR3/lab1-g03/Source/Simulations/tb_mux_4a1.sv,1659930083,systemVerilog,,,,tb_module_mux4a1,,,,,,,,
 D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/glbl.v,1659919504,verilog,,,,glbl,,,,,,,,

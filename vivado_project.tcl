@@ -98,7 +98,7 @@ set_property -name "part" -value "xc7a100tcsg324-1" -objects $obj
 set_property -name "sim.central_dir" -value "$proj_dir/${_xil_proj_name_}.ip_user_files" -objects $obj
 set_property -name "sim.ip.auto_export_scripts" -value "1" -objects $obj
 set_property -name "simulator_language" -value "Mixed" -objects $obj
-set_property -name "webtalk.xsim_launch_sim" -value "7" -objects $obj
+set_property -name "webtalk.xsim_launch_sim" -value "9" -objects $obj
 
 # Create 'sources_1' fileset (if not found)
 if {[string equal [get_filesets -quiet sources_1] ""]} {
@@ -134,13 +134,7 @@ if {[string equal [get_filesets -quiet constrs_1] ""]} {
 # Set 'constrs_1' fileset object
 set obj [get_filesets constrs_1]
 
-# Add/Import constrs file and set constrs file properties
-set file "[file normalize "$origin_dir/../../Users/USER/Documents/MEGA/Universidad/2022/Segundo Semestre/Taller de Digitales/digilent-xdc-master/Nexys-4-Master.xdc"]"
-set file_added [add_files -norecurse -fileset $obj [list $file]]
-set file "$origin_dir/../../Users/USER/Documents/MEGA/Universidad/2022/Segundo Semestre/Taller de Digitales/digilent-xdc-master/Nexys-4-Master.xdc"
-set file [file normalize $file]
-set file_obj [get_files -of_objects [get_filesets constrs_1] [list "*$file"]]
-set_property -name "file_type" -value "XDC" -objects $file_obj
+# Empty (no sources present)
 
 # Set 'constrs_1' fileset properties
 set obj [get_filesets constrs_1]
