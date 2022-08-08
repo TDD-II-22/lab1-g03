@@ -27,7 +27,7 @@ module tb_module_mux4a1;
 
     //INICIALIZACION DE DATOS
     
-    parameter BITS = 8;
+    parameter BITS = 4;
     logic   [BITS - 1 : 0]    dato0_i;
     logic   [BITS - 1 : 0]    dato1_i;
     logic   [BITS - 1 : 0]    dato2_i;
