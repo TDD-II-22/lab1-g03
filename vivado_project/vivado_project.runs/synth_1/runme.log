@@ -1,0 +1,4 @@
+
+*** Running vivado
+    with args -log module_mux4a1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source module_mux4a1.tcl
+

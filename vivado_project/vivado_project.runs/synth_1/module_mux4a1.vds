@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Sun Aug  7 20:36:29 2022
+# Process ID: 31128
+# Current directory: D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.runs/synth_1
+# Command line: vivado.exe -log module_mux4a1.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source module_mux4a1.tcl
+# Log file: D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.runs/synth_1/module_mux4a1.vds
+# Journal file: D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/Gollo/AppData/Roaming/Xilinx/Vivado/2019.1/Vivado_init.tcl'
+Sourcing tcl script 'C:/Users/Gollo/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source module_mux4a1.tcl -notrace
+ERROR: [Common 17-275] File does not exist [D:/VIVADO/Users/USER/Documents/MEGA/Universidad/2022/Segundo Semestre/Taller de Digitales/digilent-xdc-master/Nexys-4-Master.xdc]
+INFO: [Common 17-206] Exiting Vivado at Sun Aug  7 20:36:30 2022...
