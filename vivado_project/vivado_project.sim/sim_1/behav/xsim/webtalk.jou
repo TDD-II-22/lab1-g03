@@ -2,11 +2,11 @@
 # Webtalk v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Sun Aug  7 21:56:22 2022
-# Process ID: 29584
-# Current directory: D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim
-# Command line: wbtcv.exe -mode batch -source D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/xsim.dir/tb_module_mux4a1_behav/webtalk/xsim_webtalk.tcl -notrace
-# Log file: D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/webtalk.log
-# Journal file: D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim\webtalk.jou
+# Start of session at: Mon Aug  8 22:00:11 2022
+# Process ID: 8484
+# Current directory: C:/TDD/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/TDD/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/xsim.dir/tb_mux_para_50_entradas_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/TDD/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/TDD/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
-source D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/xsim.dir/tb_module_mux4a1_behav/webtalk/xsim_webtalk.tcl -notrace
+source C:/TDD/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/xsim.dir/tb_mux_para_50_entradas_behav/webtalk/xsim_webtalk.tcl -notrace

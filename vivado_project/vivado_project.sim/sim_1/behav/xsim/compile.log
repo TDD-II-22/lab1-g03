@@ -1,6 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/TDD/lab1-g03/Source/Design/mux_4a1.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module module_mux4a1
-INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/TDD/lab1-g03/Source/Simulations/tb_mux_4a1.sv" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_module_mux4a1
-INFO: [VRFC 10-2263] Analyzing Verilog file "C:/TDD/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
