@@ -34,6 +34,7 @@ module tb_module_mux4a1;
     logic   [BITS - 1 : 0]    dato3_i;
     logic   [1 : 0]           selec_i;
     logic   [BITS - 1 : 0]    salida_o;
+    int num = 0;
     
     //INCIALIZAR MUX16A1
     
@@ -54,21 +55,28 @@ module tb_module_mux4a1;
     //GENEREACION DE DATOS DE PRUEBA
     
     initial begin
-    dato0_i = 'd2;
-    dato1_i = 'd10;
-    dato2_i = 'd20;
-    dato3_i = 'd30;
-    selec_i = 'd0;
-    #10
-    selec_i = 0;
-    #10
-    selec_i = 1;
-    #10
-    selec_i = 2;
-    #10
-    selec_i = 3;
-    #10 
-    $finish;
+    for (int x = 0; x<49; x= x+1)             // inicializacion del for
+            begin
+                    num = x;
+                    dato0_i = num;
+                    num = x+1;
+                    dato1_i = num;
+                    num = x+2;
+                    dato2_i = num;
+                    num = x+3;
+                    dato3_i = num;
+                    selec_i = 0;
+                    #10
+                    selec_i = 1;
+                    #10
+                    selec_i = 2;
+                    #10
+                    selec_i = 3;
+                    #10    
+                    $finish;          
+            end
+
+   
     end
  
    
