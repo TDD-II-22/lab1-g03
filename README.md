@@ -98,34 +98,56 @@ El testbench corresponde a este archivo tb_module_switches_botones_leds.sv
 
 ### 3.3 Ejercicio 3. Multiplexor 4-to-1
 
-
+#### Tipos de variables
+- `switches_pi`: toma valores de 16 bits dependiendo de los interruptores.
+- `botones_pi`: toma valores de 4 bits dependiendo de los botones.
+- `comb_1_po`: toma valores de 4 bits dependiendo de los primeros 4 interruptores.
+- `comb_1_po`: toma valores de 4 bits dependiendo del segundo grupo de 4 interruptores.
+- `comb_1_po`: toma valores de 4 bits dependiendo del tercer grupo de 4 interruptores.
+- `comb_1_po`: toma valores de 4 bits dependiendo del cuarto grupo de 4 interruptores.
 
 #### Constantes
 
+`BITS` Es una constante númerica que almacena un número enero que representa el número de bits deseados
 
+#### 3.1.1 module_mux4a1
 
-#### 3.1.1 Módulo tal
-
-
+Módulo el cual consiste en un multiplexor 4 a 1 parametrizable según la cantidad de bits se necesite por cada línea de datos
 
 ##### 1. Encabezado del módulo
 
 
+```SystemVerilog
+module module_mux4a1 #(parameter int BITS = 4)(
 
+    input    logic    [BITS - 1 : 0]    dato0_i,
+    input    logic    [BITS - 1 : 0]    dato1_i,
+    input    logic    [BITS - 1 : 0]    dato2_i,
+    input    logic    [BITS - 1 : 0]    dato3_i,
+    input    logic    [1 : 0]           selec_i,
+    output   logic    [BITS - 1 : 0]    salida_o
+    );
+```
 ##### 2. Parámetros
 
-
+`BITS` Alamacena la cantidad de bits deseada por cada línea de datos
 
 ##### 3. Entradas y salidas
 
-
+- `dato0_i`: Entrada de los 16 interuptores físicos.
+- `dato1_i`: Entrada de los 16 interuptores físicos.
+- `dato2_i`: Entrada de los 16 interuptores físicos.
+- `dato03_i`: Entrada de los 16 interuptores físicos.
+- `select_i`: Entrada de 4 botones que si se presionan apagan los LEDs.
+- `salida_o`: Salida que encenderia los primeros 4 LEDs.
 
 ##### 4. Criterios de diseño
 
-
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
 
 ##### 5. Testbench
 
+El testbench que corresponde a este archivo tb_module_mux4a1.sv y es observable el correcto funcionamiento del multiplexor dado que en la salida, según la combinación del selector, se tiene una linea de datos de todas las que entran al multiplexor. 
 
 
 
