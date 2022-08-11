@@ -27,13 +27,14 @@ module tb_module_mux4a1;
 
     //INICIALIZACION DE DATOS
     
-    parameter BITS = 4;
+    parameter BITS = 8;
     logic   [BITS - 1 : 0]    dato0_i;
     logic   [BITS - 1 : 0]    dato1_i;
     logic   [BITS - 1 : 0]    dato2_i;
     logic   [BITS - 1 : 0]    dato3_i;
     logic   [1 : 0]           selec_i;
     logic   [BITS - 1 : 0]    salida_o;
+    int num = 0;
     
     //INCIALIZAR MUX16A1
     
@@ -47,26 +48,35 @@ module tb_module_mux4a1;
     .salida_o    (salida_o)
     );
     
-    //CREACION DE ARCHIVO
-    
+     
    
    
     //GENEREACION DE DATOS DE PRUEBA
     
     initial begin
-    
-    dato0_i = 'd2;
-    dato1_i = 'd10;
-    dato2_i = 'd20;
-    dato3_i = 'd30;
-    selec_i = 'd0;
-    #10
-    selec_i = 1;
-    #20
-    selec_i = 2;
-    #15
-    $finish;
-    
-    end
-   
+    repeat(50) begin
+                    num = $random%16;
+                    dato0_i = num;
+                    num = num+1;
+                    dato1_i = num;
+                    num = num+1;
+                    dato2_i = num;
+                    num = num+1;
+                    dato3_i = num;
+                    selec_i = 0;
+                    #10
+                    selec_i = 1;
+                    #10
+                    selec_i = 2;
+                    #10
+                    selec_i = 3;
+                    #10   
+                    
+                    $finish; 
+                end 
+                      //$finish; 
+ end
+  
 endmodule
+
+

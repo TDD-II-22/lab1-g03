@@ -2,6 +2,16 @@
 2019.1
 May 24 2019
 15:06:07
+<<<<<<< Updated upstream
+D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.sim/sim_1/behav/xsim/glbl.v,1660204849,verilog,,,,glbl,,,,,,,,
+D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_rca_8bits.sv,1660206181,systemVerilog,,,,tb_module_rca_8bits,,,,,,,,
+D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_full_adder_1bit.sv,1660205076,systemVerilog,,D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_rca_8bits.sv,,module_full_adder_1bit,,,,,,,,
+D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_rca_8bits.sv,1660205405,systemVerilog,,D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_rca_8bits.sv,,module_rca_8bits,,,,,,,,
+=======
 D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_alu_sumador.sv,1660184383,systemVerilog,,,,tb_module_alu_sumador,,,,,,,,
 D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_switches_botones_leds.sv,1660188088,systemVerilog,,,,tb_module_switches_botones_leds,,,,,,,,
+D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_alu_sumador.sv,1660184284,systemVerilog,,D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_alu_sumador.sv,,module_alu_sumador,,,,,,,,
 D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_switches_botones_leds.sv,1660188491,systemVerilog,,D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_switches_botones_leds.sv,,module_switches_botones_leds,,,,,,,,
+D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/pkg_bits.sv,1660184316,systemVerilog,D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_alu_sumador.sv;D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_alu_sumador.sv,D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_alu_sumador.sv,,pkg_bits,,,,,,,,
+>>>>>>> Stashed changes

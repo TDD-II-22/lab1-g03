@@ -17,18 +17,21 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
+set_param synth.incrementalSynthesisCache C:/Users/USER/AppData/Roaming/Xilinx/Vivado/.Xil/Vivado-11376-DESKTOP-LUJVCA8/incrSyn
+set_msg_config -id {Synth 8-256} -limit 10000
+set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.cache/wt [current_project]
-set_property parent.project_path D:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.xpr [current_project]
+set_property webtalk.parent_dir C:/TDD/lab1-g03/vivado_project/vivado_project.cache/wt [current_project]
+set_property parent.project_path C:/TDD/lab1-g03/vivado_project/vivado_project.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo d:/VIVADO/GR3/lab1-g03/vivado_project/vivado_project.cache/ip [current_project]
+set_property ip_output_repo c:/TDD/lab1-g03/vivado_project/vivado_project.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_verilog -library xil_defaultlib -sv D:/VIVADO/GR3/lab1-g03/Source/Design/mux_4a1.sv
+read_verilog -library xil_defaultlib -sv C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sources_1/imports/Design/mux_4a1.sv
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
 # design are intentionally left as such for best results. Dcp files will be
@@ -37,9 +40,6 @@ read_verilog -library xil_defaultlib -sv D:/VIVADO/GR3/lab1-g03/Source/Design/mu
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc {{D:/VIVADO/Users/USER/Documents/MEGA/Universidad/2022/Segundo Semestre/Taller de Digitales/digilent-xdc-master/Nexys-4-Master.xdc}}
-set_property used_in_implementation false [get_files {{D:/VIVADO/Users/USER/Documents/MEGA/Universidad/2022/Segundo Semestre/Taller de Digitales/digilent-xdc-master/Nexys-4-Master.xdc}}]
-
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]
 
