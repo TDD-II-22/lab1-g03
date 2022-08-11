@@ -9,9 +9,45 @@
 ## 3. Desarrollo
 
 
+### 3.2 Ejercicio 2. Switches, botones y LEDs
+#### Tipos de variables
+- `switches_pi`: Entrada de los 16 interuptores físicos.
+- `botones_pi`: Entrada de 4 botones que si se presionan apagan los LEDs.
+- `comb_1_po`: Salida que encenderia los primeros 4 LEDs.
+- `comb_1_po`: Salida que encenderia el segundo grupo de 4 LEDs.
+- `comb_1_po`: Salida que encenderia el tercer grupo de 4 LEDs.
+- `comb_1_po`: Salida que encenderia los ultimos 4 LEDs.
+#### 3.2.1  module_switches_botones_leds
+Lógica combinacional que dependiendo de las entradas de los interruptores enciende los LEDs, pero en caso de que se presione el boton que corresponde al grupo se apaga el grupo de 4 LEDa ain importar la entrada de sus 4 interruptores correspondientes.
+##### 1. Encabezado del módulo
+```SystemVerilog
+module module_switches_botones_leds(
+    input        [ 15 : 0 ] switches_pi,
+    input        [ 3 : 0  ]  botones_pi,
+    output logic [ 3 : 0  ]  comb_1_po,
+    output logic [ 3 : 0  ]  comb_2_po,
+    output logic [ 3 : 0  ]  comb_3_po,
+    output logic [ 3 : 0  ]  comb_4_po
+    );
+```
+##### 2. Parámetros
 
+El módulo no posee parámetros. 
 
- 
+##### 3. Entradas y salidas
+- `switches_pi`: Entrada de los 16 interuptores físicos.
+- `botones_pi`: Entrada de 4 botones que si se presionan apagan los LEDs.
+- `comb_1_po`: Salida que encenderia los primeros 4 LEDs.
+- `comb_1_po`: Salida que encenderia el segundo grupo de 4 LEDs.
+- `comb_1_po`: Salida que encenderia el tercer grupo de 4 LEDs.
+- `comb_1_po`: Salida que encenderia los ultimos 4 LEDs.
+##### 4. Criterios de diseño
+
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+##### 5. Testbench
+
+El testbench corresponde a este archivo tb_module_switches_botones_leds.sv 
 ### 3.1 Ejercicio 1. Circuitos Digitales Discretos
 
 
