@@ -217,7 +217,10 @@ module module_7seg_display_leds #(parameter BITS = 16) (
 Se seleccionó una lógica combinacional para la resolución del ejercicio.
 
 ##### 5. Testbench
-El testbench que corresponde a este archivo tb_module_7seg_display_leds.sv
+
+El testbench que corresponde a este archivo tb_module_7seg_deco.sv se muestra a continuación, mediante el es observable el correcto funcionamiento del mismo.
+
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/img_simula_display_1.png" width="500" >
 
 #### 3.4.2 module_7seg_decodificador
 Este modulo se encarga de recibir una entrada de 4 bits y de establecer los segmentos que se encenderan en el display.
