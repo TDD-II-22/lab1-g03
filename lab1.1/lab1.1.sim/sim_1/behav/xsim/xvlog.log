@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_full_adder_1bit.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module module_full_adder_1bit
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_rca_8bits.sv" into library xil_defaultlib
@@ -6,3 +7,10 @@ INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/VIVADO/Grupo3/lab1-g03/lab
 INFO: [VRFC 10-311] analyzing module tb_module_rca_8bits
 INFO: [VRFC 10-2263] Analyzing Verilog file "D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module glbl
+=======
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/pkg_bits.sv" into library xil_defaultlib
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sources_1/new/module_alu_sumador.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module module_alu_sumador
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_alu_sumador.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module tb_module_alu_sumador
+>>>>>>> Stashed changes

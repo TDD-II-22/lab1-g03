@@ -249,8 +249,23 @@
     </FileSet>
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
+<<<<<<< Updated upstream
       <File Path="$PSRCDIR/sim_1/new/tb_module_rca_8bits.sv">
         <FileInfo>
+          <Attr Name="UsedIn" Val="synthesis"/>
+          <Attr Name="UsedIn" Val="implementation"/>
+          <Attr Name="UsedIn" Val="simulation"/>
+        </FileInfo>
+      </File>
+      <File Path="$PSRCDIR/sim_1/new/tb_module_switches_botones_leds.sv">
+        <FileInfo>
+          <Attr Name="AutoDisabled" Val="1"/>
+=======
+      <File Path="$PSRCDIR/sim_1/new/tb_module_alu_sumador.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Proyectos_Vivado/ejemplo-crisart2001/vivado_project/vivado_project.srcs/sim_1/new/tb_module_alu_sumador.sv"/>
+          <Attr Name="ImportTime" Val="1659893602"/>
+>>>>>>> Stashed changes
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -269,16 +284,6 @@
           <Attr Name="AutoDisabled" Val="1"/>
           <Attr Name="ImportPath" Val="$PPRDIR/../../Prueba-repositorio-lab1/lab1/lab1.srcs/sim_1/new/tb_module_alu_restador.sv"/>
           <Attr Name="ImportTime" Val="1660186790"/>
-          <Attr Name="UsedIn" Val="synthesis"/>
-          <Attr Name="UsedIn" Val="implementation"/>
-          <Attr Name="UsedIn" Val="simulation"/>
-        </FileInfo>
-      </File>
-      <File Path="$PSRCDIR/sim_1/new/tb_module_alu_sumador.sv">
-        <FileInfo>
-          <Attr Name="AutoDisabled" Val="1"/>
-          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Proyectos_Vivado/ejemplo-crisart2001/vivado_project/vivado_project.srcs/sim_1/new/tb_module_alu_sumador.sv"/>
-          <Attr Name="ImportTime" Val="1659893602"/>
           <Attr Name="UsedIn" Val="synthesis"/>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
@@ -340,7 +345,11 @@
       </File>
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
+<<<<<<< Updated upstream
         <Option Name="TopModule" Val="tb_module_rca_8bits"/>
+=======
+        <Option Name="TopModule" Val="tb_module_alu_sumador"/>
+>>>>>>> Stashed changes
         <Option Name="TopLib" Val="xil_defaultlib"/>
         <Option Name="TransportPathDelay" Val="0"/>
         <Option Name="TransportIntDelay" Val="0"/>

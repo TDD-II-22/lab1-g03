@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< Updated upstream
 <GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1660206493">
   <File Type="PA-TCL" Name="module_rca_8bits.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="module_rca_8bits_drc_synth.rpt"/>
@@ -9,6 +10,15 @@
   <File Type="RDS-DCP" Name="module_rca_8bits.dcp"/>
   <File Type="VDS-TIMINGSUMMARY" Name="module_rca_8bits_timing_summary_synth.rpt"/>
   <File Type="VDS-TIMING-PB" Name="module_rca_8bits_timing_summary_synth.pb"/>
+=======
+<GenRun Id="synth_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1660189070">
+  <File Type="PA-TCL" Name="module_switches_botones_leds.tcl"/>
+  <File Type="REPORTS-TCL" Name="module_switches_botones_leds_reports.tcl"/>
+  <File Type="RDS-RDS" Name="module_switches_botones_leds.vds"/>
+  <File Type="RDS-UTIL" Name="module_switches_botones_leds_utilization_synth.rpt"/>
+  <File Type="RDS-UTIL-PB" Name="module_switches_botones_leds_utilization_synth.pb"/>
+  <File Type="RDS-DCP" Name="module_switches_botones_leds.dcp"/>
+>>>>>>> Stashed changes
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
     <File Path="$PSRCDIR/sources_1/new/module_full_adder_1bit.sv">
