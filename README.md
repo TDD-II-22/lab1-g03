@@ -14,28 +14,44 @@
 ### 3.1 Ejercicio 1. Circuitos Digitales Discretos
 
 
+En este ejercicio se debió hacer un montaje en protoboard para la conexión de un taclado hexadecimal y por medio de un encoder y un decoder poder mapear que tecla se está pulsando. El circuito a montar es el siguiente:
+
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/cto.png" width="500" >
 
 
 
-##### 1. Encabezado del módulo
+##### 1. Lógica combinacional
 
 
 
-##### 2. Parámetros
+La lógica combinacional para el decoder es la mostrada en la siguiente imágen:
+
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/Pt1.jpg" width="300" >
+
+
+La lógica combinacional para el encoder es la mostrada en la siguiente imágen:
+
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/Pt2.jpg" width="300" >
 
 
 
-##### 3. Entradas y salidas
+##### 2. Circuitos Lógicos
+
+El circuito combinacional para el decoder es la mostrada en la siguiente imágen:
+
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/GRAP1.png" width="500" >
 
 
 
-##### 4. Criterios de diseño
+El circuito combinacional para el encoder es la mostrada en la siguiente imágen:
+
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/GRAP2.png" width="500" >
 
 
 
 ##### 5. Testbench
 
-
+Para las pruebas del circuito, se conectaron dos switches para simular los estados en bajo y en alto de las entradas del decoder y en las salidas del encoder dos leds que representa una combinación específica para cada tecla pulsada de la fila escogida por el decoder.
 
 ### 3.2 Ejercicio 2. Switches, botones y LEDs
 #### Tipos de variables
