@@ -92,7 +92,7 @@ Se seleccionó una lógica combinacional para la resolución del ejercicio.
 ##### 5. Testbench
 
 El testbench corresponde a este archivo tb_module_switches_botones_leds.sv 
-
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/foto_tb_sbl.png" width="300" >
 
 
 
@@ -250,6 +250,7 @@ Se seleccionó una lógica combinacional para la resolución del ejercicio.
 
 ##### 5. Testbench
 El testbench que corresponde a este archivo tb_module_7seg_deco.sv
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/tb_deco.png" width="300" >
 #### 3.4.3 module_7seg_mux4a1
 Este modulo se encarga de multiplexar las 4 entradas y dejar salir 1 de estas dependiendo de los bits de selección.
 ##### 1. Encabezado del módulo
