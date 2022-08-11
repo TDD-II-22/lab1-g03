@@ -30,7 +30,7 @@ module module_alu_suma(
     import pkg_bits::*;
     
     logic [ BITS_WIDTH - 1 : 0]     cero = 0;  
-    logic [ BITS_WIDTH     : 0 ]    alu_result_wo;
+    logic [ BITS_WIDTH     : 0]     alu_result_wo;
     pkg_bits:: bitsw_t              alu_result_o;
     logic                           alu_flags_o;
     
@@ -54,7 +54,7 @@ module module_alu_suma(
             end 
             else begin
                 alu_result_o = alu_result_wo [ BITS_WIDTH - 1 : 0 ];
-                alu_flags_o  = 1'bX;
+                alu_flags_o  = 1'b0;
             end 
         end
         
@@ -63,13 +63,13 @@ module module_alu_suma(
                 if ( alu_flagin_i ) begin
                     alu_result_o = alu_result_wo [ BITS_WIDTH - 1 : 0 ] ;
                     //alu_flags_o  = alu_result_wo [ BITS         ];
-                    alu_flags_o  = 1'bX;
+                    alu_flags_o  = 1'b0;
                 end
                 
                 else begin
                     alu_result_o = alu_result_wo [ BITS_WIDTH - 1 : 0 ];
                     //alu_flags_o  = alu_result_wo [ BITS         ];
-                    alu_flags_o  = 1'bX;
+                    alu_flags_o  = 1'b0;
                 end
             end
             
@@ -90,7 +90,7 @@ module module_alu_suma(
   
         else begin 
             alu_result_o = alu_result_wo [ BITS_WIDTH - 1 : 0 ] ;
-            alu_flags_o  = 1'bX;
+            alu_flags_o  = 1'b0;
         end
         
         ALUResult_o = {alu_flags_o, alu_result_o};

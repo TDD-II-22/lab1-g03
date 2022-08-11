@@ -127,7 +127,7 @@ module tb_module_alu;
     #2
     
     //corriento derecha A agregando 0
-    ALUControl_i            =       4'h9;
+    ALUControl_i            =       4'h;
     ALUFlagIn_i             =       0;
     #2
     
