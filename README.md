@@ -408,7 +408,10 @@ Se seleccionó una lógica combinacional para la resolución del ejercicio.
 
 ##### 5. Testbench
 
-El testbench corresponde a este archivo tb_module_alu.sv
+
+El testbench que corresponde a este archivo tb_module_alu.sv y es observable el correcto funcionamiento de la ALU.
+
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/img_simula_alu.png" width="500" >
 
 
 #### 3.6.2 module_alu_mux16a1
