@@ -2,7 +2,6 @@
 2019.1
 May 24 2019
 15:06:07
-C:/TDD/lab1-g03/Source/Simulations/tb_mux_para_50_entradas.sv,1660017926,systemVerilog,,,,tb_mux_para_50_entradas,,,,,,,,
-C:/TDD/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/glbl.v,1659970309,verilog,,,,glbl,,,,,,,,
-C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv,1660228277,systemVerilog,,,,tb_module_mux4a1,,,,,,,,
+C:/TDD/lab1-g03/vivado_project/vivado_project.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv,1660230653,systemVerilog,,,,tb_module_mux4a1,,,,,,,,
 C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sources_1/imports/Design/mux_4a1.sv,1660193910,systemVerilog,,C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv,,module_mux4a1,,,,,,,,

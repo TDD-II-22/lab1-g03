@@ -48,22 +48,20 @@ module tb_module_mux4a1;
     .salida_o    (salida_o)
     );
     
-    //CREACION DE ARCHIVO
-    
+     
    
    
     //GENEREACION DE DATOS DE PRUEBA
     
     initial begin
-    for (int x = 0; x<49; x= x+1)             // inicializacion del for
-            begin
-                    num = x;
+    repeat(50) begin
+                    num = $random%16;
                     dato0_i = num;
-                    num = x+1;
+                    num = num+1;
                     dato1_i = num;
-                    num = x+2;
+                    num = num+1;
                     dato2_i = num;
-                    num = x+3;
+                    num = num+1;
                     dato3_i = num;
                     selec_i = 0;
                     #10
@@ -72,12 +70,13 @@ module tb_module_mux4a1;
                     selec_i = 2;
                     #10
                     selec_i = 3;
-                    #10    
-                    $finish;          
-            end
-
-   
-    end
- 
-   
+                    #10   
+                    
+                    $finish; 
+                end 
+                      //$finish; 
+ end
+  
 endmodule
+
+
