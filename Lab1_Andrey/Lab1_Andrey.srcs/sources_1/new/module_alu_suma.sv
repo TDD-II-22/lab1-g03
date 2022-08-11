@@ -54,7 +54,7 @@ module module_alu_suma(
             end 
             else begin
                 alu_result_o = alu_result_wo [ BITS_WIDTH - 1 : 0 ];
-                alu_flags_o  = 1'b0;
+                alu_flags_o  = 1'bx;
             end 
         end
         
@@ -63,13 +63,13 @@ module module_alu_suma(
                 if ( alu_flagin_i ) begin
                     alu_result_o = alu_result_wo [ BITS_WIDTH - 1 : 0 ] ;
                     //alu_flags_o  = alu_result_wo [ BITS         ];
-                    alu_flags_o  = 1'b0;
+                    alu_flags_o  = 1'bx;
                 end
                 
                 else begin
                     alu_result_o = alu_result_wo [ BITS_WIDTH - 1 : 0 ];
                     //alu_flags_o  = alu_result_wo [ BITS         ];
-                    alu_flags_o  = 1'b0;
+                    alu_flags_o  = 1'bx;
                 end
             end
             
@@ -90,7 +90,7 @@ module module_alu_suma(
   
         else begin 
             alu_result_o = alu_result_wo [ BITS_WIDTH - 1 : 0 ] ;
-            alu_flags_o  = 1'b0;
+            alu_flags_o  = 1'bx;
         end
         
         ALUResult_o = {alu_flags_o, alu_result_o};

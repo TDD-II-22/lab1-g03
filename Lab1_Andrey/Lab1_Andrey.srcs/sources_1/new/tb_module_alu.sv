@@ -134,6 +134,15 @@ module tb_module_alu;
     //corriento derecha A agregando 1
     ALUFlagIn_i             =       1;
     
+    #2
+    
+        //resta sin carry
+    ALUA_i                  =       4'hf;
+    ALUB_i                  =       4'hf;
+    ALUControl_i            =       4'h6;
+    ALUFlagIn_i             =       0;
+    #2   
+    
     #2 
                
     $finish;

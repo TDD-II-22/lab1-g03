@@ -30,7 +30,6 @@ module module_alu_resta(
     import pkg_bits::*;
     logic [ BITS_WIDTH - 1 : 0 ] alu_b_i_inv;
     logic                        alu_flags_o;
-    bits_t                       alu_result_o;
     
     assign alu_b_i_inv = ~alu_b_i +1'b1;
 
@@ -38,9 +37,9 @@ module module_alu_resta(
                           .alu_flagin_i ( alu_flagin_i ),
                           .alu_a_i      ( alu_a_i      ),
                           .alu_b_i      ( alu_b_i_inv  ),
-                          .ALUResult_o ( alu_result_o )
+                          .ALUResult_o  ( ALUResult_o )
     );
     
-    assign ALUResult_o = {alu_flags_o, alu_result_o};
+
     
 endmodule
