@@ -1,4 +1,4 @@
-# Laboratorio 1 Tallere de Diseño Digital
+# Laboratorio 1 Taller de Diseño Digital
 
 ## 1. Abreviaturas y definiciones
 - **FPGA**: Field Programmable Gate Arrays
