@@ -4,7 +4,11 @@
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <application name="pa" timeStamp="Thu Aug 11 02:30:01 2022">
+=======
+<application name="pa" timeStamp="Thu Aug 11 08:29:53 2022">
+>>>>>>> Stashed changes
 =======
 <application name="pa" timeStamp="Thu Aug 11 08:29:53 2022">
 >>>>>>> Stashed changes
@@ -76,6 +80,9 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="BaseDialog_APPLY" value="10" type="GuiHandlerData"/>
 <property name="BaseDialog_CANCEL" value="23" type="GuiHandlerData"/>
 <property name="BaseDialog_OK" value="239" type="GuiHandlerData"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 <property name="BaseDialog_YES" value="3" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="12" type="GuiHandlerData"/>
@@ -90,7 +97,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="ExpRunTreePanel_EXP_RUN_TREE_TABLE" value="2" type="GuiHandlerData"/>
 <property name="FPGAChooser_FPGA_TABLE" value="3" type="GuiHandlerData"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="552" type="GuiHandlerData"/>
+=======
+<property name="FileSetPanel_FILE_SET_PANEL_TREE" value="533" type="GuiHandlerData"/>
+>>>>>>> Stashed changes
 =======
 <property name="FileSetPanel_FILE_SET_PANEL_TREE" value="533" type="GuiHandlerData"/>
 >>>>>>> Stashed changes
@@ -99,11 +110,17 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="FilterToolBar_SHOW_ALL" value="1" type="GuiHandlerData"/>
 <property name="FindAndReplaceAllDialog_CLOSE" value="2" type="GuiHandlerData"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="303" type="GuiHandlerData"/>
 <property name="GettingStartedView_CLEAR_LIST" value="1" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GettingStartedView_OPEN_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="GraphicalView_ZOOM_FIT" value="9" type="GuiHandlerData"/>
+=======
+<property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="302" type="GuiHandlerData"/>
+<property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
+<property name="GraphicalView_ZOOM_FIT" value="10" type="GuiHandlerData"/>
+>>>>>>> Stashed changes
 =======
 <property name="FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE" value="302" type="GuiHandlerData"/>
 <property name="GettingStartedView_CREATE_NEW_PROJECT" value="1" type="GuiHandlerData"/>
@@ -166,17 +183,23 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_SIMULATION_RUN_BEHAVIORAL" value="74" type="GuiHandlerData"/>
 <property name="PACommandNames_SIMULATION_RUN_POST_SYNTHESIS_FUNCTIONAL" value="3" type="GuiHandlerData"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 <property name="PACommandNames_SIMULATION_SETTINGS" value="32" type="GuiHandlerData"/>
 <property name="PACommandNames_SRC_DISABLE" value="6" type="GuiHandlerData"/>
 <property name="PACommandNames_SRC_ENABLE" value="2" type="GuiHandlerData"/>
 <property name="PACommandNames_SYNTH_SETTINGS" value="1" type="GuiHandlerData"/>
 <property name="PAViews_CODE" value="36" type="GuiHandlerData"/>
 =======
+=======
+>>>>>>> Stashed changes
 <property name="PACommandNames_SIMULATION_SETTINGS" value="33" type="GuiHandlerData"/>
 <property name="PACommandNames_SRC_DISABLE" value="3" type="GuiHandlerData"/>
 <property name="PACommandNames_SRC_ENABLE" value="2" type="GuiHandlerData"/>
 <property name="PACommandNames_SYNTH_SETTINGS" value="1" type="GuiHandlerData"/>
 <property name="PAViews_CODE" value="30" type="GuiHandlerData"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
 <property name="PAViews_DEVICE" value="3" type="GuiHandlerData"/>
 <property name="PAViews_PROJECT_SUMMARY" value="48" type="GuiHandlerData"/>

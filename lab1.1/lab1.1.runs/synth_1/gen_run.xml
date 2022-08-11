@@ -18,6 +18,9 @@
   <File Type="RDS-UTIL" Name="module_switches_botones_leds_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="module_switches_botones_leds_utilization_synth.pb"/>
   <File Type="RDS-DCP" Name="module_switches_botones_leds.dcp"/>
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>

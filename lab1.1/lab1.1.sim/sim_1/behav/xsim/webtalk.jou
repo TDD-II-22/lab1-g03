@@ -3,6 +3,7 @@
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
 # Start of session at: Thu Aug 11 02:32:59 2022
 # Process ID: 21748
 # Current directory: D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.sim/sim_1/behav/xsim
@@ -12,6 +13,8 @@
 #-----------------------------------------------------------
 source D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.sim/sim_1/behav/xsim/xsim.dir/tb_module_rca_8bits_behav/webtalk/xsim_webtalk.tcl -notrace
 =======
+=======
+>>>>>>> Stashed changes
 # Start of session at: Thu Aug 11 08:29:58 2022
 # Process ID: 14756
 # Current directory: D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.sim/sim_1/behav/xsim
@@ -20,4 +23,7 @@ source D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.sim/sim_1/behav/xsim/xsim.dir/tb_
 # Journal file: D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.sim/sim_1/behav/xsim\webtalk.jou
 #-----------------------------------------------------------
 source D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.sim/sim_1/behav/xsim/xsim.dir/tb_module_alu_sumador_behav/webtalk/xsim_webtalk.tcl -notrace
+<<<<<<< Updated upstream
+>>>>>>> Stashed changes
+=======
 >>>>>>> Stashed changes
