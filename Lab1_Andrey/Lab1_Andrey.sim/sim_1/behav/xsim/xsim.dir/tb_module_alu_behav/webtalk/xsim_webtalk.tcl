@@ -1,6 +1,6 @@
 webtalk_init -webtalk_dir C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.sim/sim_1/behav/xsim/xsim.dir/tb_module_alu_behav/webtalk/
 webtalk_register_client -client project
-webtalk_add_data -client project -key date_generated -value "Thu Aug 11 10:27:03 2022" -context "software_version_and_target_device"
+webtalk_add_data -client project -key date_generated -value "Thu Aug 11 11:32:59 2022" -context "software_version_and_target_device"
 webtalk_add_data -client project -key product_version -value "XSIM v2019.1 (64-bit)" -context "software_version_and_target_device"
 webtalk_add_data -client project -key build_version -value "2552052" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_platform -value "WIN64" -context "software_version_and_target_device"
@@ -14,7 +14,7 @@ webtalk_add_data -client project -key target_package -value "not_applicable" -co
 webtalk_add_data -client project -key target_speed -value "not_applicable" -context "software_version_and_target_device"
 webtalk_add_data -client project -key random_id -value "3a63be75-2188-4835-9462-5448aaf58423" -context "software_version_and_target_device"
 webtalk_add_data -client project -key project_id -value "f82f6a25c0634d629e044408acf31fb8" -context "software_version_and_target_device"
-webtalk_add_data -client project -key project_iteration -value "25" -context "software_version_and_target_device"
+webtalk_add_data -client project -key project_iteration -value "27" -context "software_version_and_target_device"
 webtalk_add_data -client project -key os_name -value "Windows Server 2016 or Windows 10" -context "user_environment"
 webtalk_add_data -client project -key os_release -value "major release  (build 9200)" -context "user_environment"
 webtalk_add_data -client project -key cpu_name -value "Intel(R) Core(TM) i5-10210U CPU @ 1.60GHz" -context "user_environment"
@@ -37,7 +37,7 @@ webtalk_add_data -client xsim -key Total_Nets -value "0" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Processes -value "57" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Total_Instances -value "17" -context "xsim\\usage"
 webtalk_add_data -client xsim -key Xilinx_HDL_Libraries_Used -value "secureip unimacro_ver unisims_ver " -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Time -value "1.12_sec" -context "xsim\\usage"
-webtalk_add_data -client xsim -key Compiler_Memory -value "45404_KB" -context "xsim\\usage"
-webtalk_transmit -clientid 2777156119 -regid "" -xml C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.sim/sim_1/behav/xsim/xsim.dir/tb_module_alu_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.sim/sim_1/behav/xsim/xsim.dir/tb_module_alu_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.sim/sim_1/behav/xsim/xsim.dir/tb_module_alu_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
+webtalk_add_data -client xsim -key Compiler_Time -value "0.70_sec" -context "xsim\\usage"
+webtalk_add_data -client xsim -key Compiler_Memory -value "45236_KB" -context "xsim\\usage"
+webtalk_transmit -clientid 2241443056 -regid "" -xml C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.sim/sim_1/behav/xsim/xsim.dir/tb_module_alu_behav/webtalk/usage_statistics_ext_xsim.xml -html C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.sim/sim_1/behav/xsim/xsim.dir/tb_module_alu_behav/webtalk/usage_statistics_ext_xsim.html -wdm C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.sim/sim_1/behav/xsim/xsim.dir/tb_module_alu_behav/webtalk/usage_statistics_ext_xsim.wdm -intro "<H3>XSIM Usage Report</H3><BR>"
 webtalk_terminate
