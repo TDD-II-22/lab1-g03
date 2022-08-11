@@ -1,6 +1,6 @@
 
 *** Running vivado
-    with args -log module_switches_botones_leds.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source module_switches_botones_leds.tcl
+    with args -log module_7seg_display_leds.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source module_7seg_display_leds.tcl
 
 
 ****** Vivado v2019.1 (64-bit)
@@ -9,21 +9,35 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 Sourcing tcl script 'C:/Users/Crisa/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
-source module_switches_botones_leds.tcl -notrace
-Command: synth_design -top module_switches_botones_leds -part xc7a100tcsg324-1
+source module_7seg_display_leds.tcl -notrace
+Command: synth_design -top module_7seg_display_leds -part xc7a100tcsg324-1
 Starting synth_design
 Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
 INFO: [Device 21-403] Loading part xc7a100tcsg324-1
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 17912 
+INFO: Helper process launched with PID 9692 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 690.930 ; gain = 178.066
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:04 . Memory (MB): peak = 689.676 ; gain = 178.469
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-6157] synthesizing module 'module_switches_botones_leds' [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/sources_1/new/module_switches_botones_leds.sv:23]
-INFO: [Synth 8-6155] done synthesizing module 'module_switches_botones_leds' (1#1) [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/sources_1/new/module_switches_botones_leds.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_7seg_display_leds' [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/sources_1/imports/Modulos_sv/module_7seg_display_leds.sv:23]
+	Parameter BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'module_7seg_mux4a1' [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/sources_1/imports/Modulos_sv/module_7seg_mux4a1.sv:23]
+	Parameter BITS bound to: 16 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'module_7seg_mux4a1' (1#1) [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/sources_1/imports/Modulos_sv/module_7seg_mux4a1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_7seg_decodificador' [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/sources_1/imports/Modulos_sv/module_7seg_decodificador.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_7seg_decodificador' (2#1) [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/sources_1/imports/Modulos_sv/module_7seg_decodificador.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_7seg_display_leds' (3#1) [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/sources_1/imports/Modulos_sv/module_7seg_display_leds.sv:23]
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[7] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[6] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[5] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[4] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[3] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[2] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[1] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 754.801 ; gain = 241.938
+Finished RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 753.922 ; gain = 242.715
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -36,44 +50,44 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 754.801 ; gain = 241.938
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 753.922 ; gain = 242.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 754.801 ; gain = 241.938
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 753.922 ; gain = 242.715
 ---------------------------------------------------------------------------------
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
-Parsing XDC File [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/constrs_1/new/Nexys-4-Master-switches-botones-LEDs.xdc]
-Finished Parsing XDC File [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/constrs_1/new/Nexys-4-Master-switches-botones-LEDs.xdc]
-INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/constrs_1/new/Nexys-4-Master-switches-botones-LEDs.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/module_switches_botones_leds_propImpl.xdc].
-Resolution: To avoid this warning, move constraints listed in [.Xil/module_switches_botones_leds_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/constrs_1/new/constraints_7seg.xdc]
+Finished Parsing XDC File [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/constrs_1/new/constraints_7seg.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.srcs/constrs_1/new/constraints_7seg.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/module_7seg_display_leds_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/module_7seg_display_leds_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 801.355 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 795.539 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 801.355 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 795.539 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 801.355 ; gain = 288.492
+Finished Constraint Validation : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 795.539 ; gain = 284.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7a100tcsg324-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 801.355 ; gain = 288.492
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 795.539 ; gain = 284.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 801.355 ; gain = 288.492
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 795.539 ; gain = 284.332
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 801.355 ; gain = 288.492
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 795.539 ; gain = 284.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -86,7 +100,8 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+	   4 Input      4 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -94,10 +109,14 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module module_switches_botones_leds 
+Module module_7seg_display_leds 
 Detailed RTL Component Info : 
 +---Muxes : 
-	   2 Input      4 Bit        Muxes := 4     
+	   4 Input     16 Bit        Muxes := 1     
+Module module_7seg_mux4a1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -114,8 +133,16 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[7] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[6] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[5] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[4] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[3] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[2] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[1] driven by constant 1
+WARNING: [Synth 8-3917] design module_7seg_display_leds has port anodo_po[0] driven by constant 0
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 801.355 ; gain = 288.492
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 795.539 ; gain = 284.332
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -127,13 +154,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 847.852 ; gain = 334.988
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 845.922 ; gain = 334.715
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 847.926 ; gain = 335.062
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 845.922 ; gain = 334.715
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -145,7 +172,7 @@ Report RTL Partitions:
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 857.488 ; gain = 344.625
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 856.402 ; gain = 345.195
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -169,7 +196,7 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 873.320 ; gain = 360.457
+Finished IO Insertion : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 872.184 ; gain = 360.977
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -182,7 +209,7 @@ Report Check Netlist:
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 873.320 ; gain = 360.457
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 872.184 ; gain = 360.977
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -194,25 +221,25 @@ Report RTL Partitions:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 873.320 ; gain = 360.457
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 872.184 ; gain = 360.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 873.320 ; gain = 360.457
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 872.184 ; gain = 360.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 873.320 ; gain = 360.457
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 872.184 ; gain = 360.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 873.320 ; gain = 360.457
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 872.184 ; gain = 360.977
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -228,37 +255,39 @@ Report Cell Usage:
 +------+-----+------+
 |      |Cell |Count |
 +------+-----+------+
-|1     |LUT2 |    16|
-|2     |IBUF |    20|
-|3     |OBUF |    16|
+|1     |LUT2 |     4|
+|2     |LUT4 |     7|
+|3     |LUT6 |     4|
+|4     |IBUF |    18|
+|5     |OBUF |    31|
 +------+-----+------+
 
 Report Instance Areas: 
 +------+---------+-------+------+
 |      |Instance |Module |Cells |
 +------+---------+-------+------+
-|1     |top      |       |    52|
+|1     |top      |       |    64|
 +------+---------+-------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:20 ; elapsed = 00:00:20 . Memory (MB): peak = 873.320 ; gain = 360.457
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 872.184 ; gain = 360.977
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:19 . Memory (MB): peak = 873.320 ; gain = 313.902
-Synthesis Optimization Complete : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 873.320 ; gain = 360.457
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:21 . Memory (MB): peak = 872.184 ; gain = 319.359
+Synthesis Optimization Complete : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 872.184 ; gain = 360.977
 INFO: [Project 1-571] Translating synthesized netlist
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 892.242 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 885.406 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-12 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+16 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 892.242 ; gain = 601.059
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 892.242 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 885.406 ; gain = 594.125
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 885.406 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
-INFO: [Common 17-1381] The checkpoint 'D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.runs/synth_1/module_switches_botones_leds.dcp' has been generated.
-INFO: [runtcl-4] Executing : report_utilization -file module_switches_botones_leds_utilization_synth.rpt -pb module_switches_botones_leds_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Aug 11 11:36:05 2022...
+INFO: [Common 17-1381] The checkpoint 'D:/Documentos/GitHub/lab1-g03/lab1.2/lab1.2.runs/synth_1/module_7seg_display_leds.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file module_7seg_display_leds_utilization_synth.rpt -pb module_7seg_display_leds_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 11 11:50:26 2022...

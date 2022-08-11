@@ -42,6 +42,6 @@ EAStep()
 
 # pre-commands:
 /bin/touch .write_bitstream.begin.rst
-EAStep vivado -log module_switches_botones_leds.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source module_switches_botones_leds.tcl -notrace
+EAStep vivado -log module_7seg_display_leds.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source module_7seg_display_leds.tcl -notrace
 
 
