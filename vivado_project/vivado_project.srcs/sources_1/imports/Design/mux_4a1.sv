@@ -23,7 +23,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module module_mux4a1 #(parameter int BITS = 4)(
+module module_mux4a1 #(parameter int BITS = 8)(
 
     input    logic    [BITS - 1 : 0]    dato0_i,
     input    logic    [BITS - 1 : 0]    dato1_i,

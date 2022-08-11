@@ -27,7 +27,7 @@ module tb_module_mux4a1;
 
     //INICIALIZACION DE DATOS
     
-    parameter BITS = 4;
+    parameter BITS = 8;
     logic   [BITS - 1 : 0]    dato0_i;
     logic   [BITS - 1 : 0]    dato1_i;
     logic   [BITS - 1 : 0]    dato2_i;
@@ -54,19 +54,22 @@ module tb_module_mux4a1;
     //GENEREACION DE DATOS DE PRUEBA
     
     initial begin
-    
     dato0_i = 'd2;
     dato1_i = 'd10;
     dato2_i = 'd20;
     dato3_i = 'd30;
     selec_i = 'd0;
     #10
+    selec_i = 0;
+    #10
     selec_i = 1;
-    #20
+    #10
     selec_i = 2;
-    #15
+    #10
+    selec_i = 3;
+    #10 
     $finish;
-    
     end
+ 
    
 endmodule
