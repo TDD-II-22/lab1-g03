@@ -171,14 +171,14 @@ El testbench que corresponde a este archivo tb_module_mux4a1.sv y es observable 
 ### 3.4 Ejercicio 4. Decodificador para display de 7 segmentos
 
 #### Constantes
-`btn_pi`: Toma valores dependiendo de los botones presionados.
-`selec_i`: Toma los valores dependiendo de los botones.
-`sw_pi`: Toma valores dependiendo de los switches activados.
-`display_po`: Toma valores dependiendo del decodificador y establece los segmentos que se encenderan.
-`anodo_po`: Tiene un valor fijo en el que solo enciende el primer display.
-`salida_o`: Toma los valores dependiendo de la selección y la entrada.
-`entrada_i`: Toma valores dependiendo de la salida del multiplexor.
-`display_o`: Toma valores dependiendo de la salida del decodificador.
+- `btn_pi`: Toma valores dependiendo de los botones presionados.
+- `selec_i`: Toma los valores dependiendo de los botones.
+- `sw_pi`: Toma valores dependiendo de los switches activados.
+- `display_po`: Toma valores dependiendo del decodificador y establece los segmentos que se encenderan.
+- `anodo_po`: Tiene un valor fijo en el que solo enciende el primer display.
+- `salida_o`: Toma los valores dependiendo de la selección y la entrada.
+- `entrada_i`: Toma valores dependiendo de la salida del multiplexor.
+- `display_o`: Toma valores dependiendo de la salida del decodificador.
 
 
  
@@ -199,13 +199,13 @@ module module_7seg_display_leds #(parameter BITS = 16) (
 
 
 ##### 2. Parámetros
-`BITS` Es una constante númerica que almacena un número enero que representa el número de bits deseados.
+`BITS`: Es una constante númerica que almacena un número enero que representa el número de bits deseados.
 
 ##### 3. Entradas y salidas
-`btn_pi`:Entrada de 2 bits para la selección dentro del Mux.
-`sw_pi`: Entradas de los interruptores que se quieran usar.
-`display_po`: Salida que va directo al display de 7 segmentos.
-`anodo_po`: Salida de 8 bits que establece cuales displays de los 8 que hay se van a encender.
+- `btn_pi`:Entrada de 2 bits para la selección dentro del Mux.
+- `sw_pi`: Entradas de los interruptores que se quieran usar.
+- `display_po`: Salida que va directo al display de 7 segmentos.
+- `anodo_po`: Salida de 8 bits que establece cuales displays de los 8 que hay se van a encender.
 
 ##### 4. Criterios de diseño
 Se seleccionó una lógica combinacional para la resolución del ejercicio.
@@ -229,8 +229,8 @@ No tiene parametros.
 
 
 ##### 3. Entradas y salidas
-`entrada_i`: Entrada de 4 bits dependiendo de la salida del multiplexor.
-`display_o`: Salida de 7 bits que establece los segmentos que se encienden y apagan.
+- `entrada_i`: Entrada de 4 bits dependiendo de la salida del multiplexor.
+- `display_o`: Salida de 7 bits que establece los segmentos que se encienden y apagan.
 
 
 ##### 4. Criterios de diseño
@@ -251,13 +251,13 @@ module module_7seg_mux4a1 # (parameter BITS = 16)(
 ```
 
 ##### 2. Parámetros
-`BITS` Es una constante númerica que almacena un número enero que representa el número de bits deseados
+- `BITS` Es una constante númerica que almacena un número enero que representa el número de bits deseados
 
 
 ##### 3. Entradas y salidas
-`entrada_i`: Entrada parametrizada que se divide en 4 entradas.
-`selec_i`: Entrada que establece cual de las 4 entradas se dejara pasar en el multiplexor.
-`salida_o`: Salida que depende de la selección y las entradas.
+- `entrada_i`: Entrada parametrizada que se divide en 4 entradas.
+- `selec_i`: Entrada que establece cual de las 4 entradas se dejara pasar en el multiplexor.
+- `salida_o`: Salida que depende de la selección y las entradas.
 
 
 ##### 4. Criterios de diseño
