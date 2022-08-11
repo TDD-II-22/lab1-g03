@@ -99,13 +99,13 @@ El testbench corresponde a este archivo tb_module_switches_botones_leds.sv
 ### 3.3 Ejercicio 3. Multiplexor 4-to-1
 
 #### Tipos de variables
-- `switches_pi`: toma valores de 16 bits dependiendo de los interruptores.
-- `botones_pi`: toma valores de 4 bits dependiendo de los botones.
-- `comb_1_po`: toma valores de 4 bits dependiendo de los primeros 4 interruptores.
-- `comb_1_po`: toma valores de 4 bits dependiendo del segundo grupo de 4 interruptores.
-- `comb_1_po`: toma valores de 4 bits dependiendo del tercer grupo de 4 interruptores.
-- `comb_1_po`: toma valores de 4 bits dependiendo del cuarto grupo de 4 interruptores.
-
+- `dato0_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato1_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato2_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato3_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `select_i`: Entrada de 2 bits para multiplexar 4 entradas.
+- `salida_o`: Salida del multiplexor.
+- 
 #### Constantes
 
 `BITS` Es una constante númerica que almacena un número enero que representa el número de bits deseados
@@ -134,12 +134,12 @@ module module_mux4a1 #(parameter int BITS = 4)(
 
 ##### 3. Entradas y salidas
 
-- `dato0_i`: Entrada de los 16 interuptores físicos.
-- `dato1_i`: Entrada de los 16 interuptores físicos.
-- `dato2_i`: Entrada de los 16 interuptores físicos.
-- `dato03_i`: Entrada de los 16 interuptores físicos.
-- `select_i`: Entrada de 4 botones que si se presionan apagan los LEDs.
-- `salida_o`: Salida que encenderia los primeros 4 LEDs.
+- `dato0_i`: Línea de datos que entra al multiplexor.
+- `dato1_i`: Línea de datos que entra al multiplexor.
+- `dato2_i`: Línea de datos que entra al multiplexor.
+- `dato3_i`: Línea de datos que entra al multiplexor.
+- `select_i`: Linea de selector de 2 bits para multiplexar 4 entradas.
+- `salida_o`: Salida del multiplexor
 
 ##### 4. Criterios de diseño
 
