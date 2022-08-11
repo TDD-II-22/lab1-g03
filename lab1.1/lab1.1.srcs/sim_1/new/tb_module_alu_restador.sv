@@ -38,9 +38,9 @@ module_alu_restador DUT(
     );
     
 initial begin
-    alu_flagin_i  =  1'b1;
-    alu_a_i = 0;
-    alu_b_i = 4'b0111;
+    alu_flagin_i  =  1'b0;
+    alu_a_i = 4'b1111;
+    alu_b_i = 4'b1111;
     //alu_a_i = $random%BITS;
     //alu_b_i = $random%BITS;
   	#5

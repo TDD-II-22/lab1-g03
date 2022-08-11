@@ -22,9 +22,9 @@
 
 module module_alu_sumador (
     input  logic                       alu_flagin_i,
-    input  pkg_bits:: bits_in_t        alu_a_i,
-    input  pkg_bits:: bits_in_t        alu_b_i,
-    output pkg_bits:: bits_in_t        alu_result_o,
+    input  pkg_bits:: bits_t        alu_a_i,
+    input  pkg_bits:: bits_t        alu_b_i,
+    output pkg_bits:: bits_t        alu_result_o,
     output logic                       alu_flags_o
     );
     import pkg_bits::*;
