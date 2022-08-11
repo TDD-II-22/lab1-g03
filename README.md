@@ -12,7 +12,7 @@
 
 
  
-### 3.1 Ejercicio 1. Circuito Digitales Discretos
+### 3.1 Ejercicio 1. Circuitos Digitales Discretos
 
 
 #### Tipos de variables
@@ -66,7 +66,7 @@ El testbench .,mkj
 
 
 
-### 3.2 Ejercicio 2. Switxhes, botones y LEDs
+### 3.2 Ejercicio 2. Switches, botones y LEDs
 
 
 #### Tipos de variables
