@@ -18,33 +18,35 @@ proc create_report { reportName command } {
   }
 }
 set_param chipscope.maxJobs 2
+set_param xicom.use_bs_reader 1
 set_msg_config -id {Common 17-41} -limit 10000000
 create_project -in_memory -part xc7a100tcsg324-1
 
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/LAB_1/LAB_1.cache/wt [current_project]
-set_property parent.project_path C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/LAB_1/LAB_1.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.cache/wt [current_project]
+set_property parent.project_path C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/LAB_1/LAB_1.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_7seg_decodificador.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/pkg_bits.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu.sv
-  C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/LAB_1/LAB_1.srcs/sources_1/new/module_alu_and.sv
+  C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_and.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_bandera_z.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_decre.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_incre.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_mux16a1.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_not.sv
-  C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/LAB_1/LAB_1.srcs/sources_1/new/module_alu_or.sv
+  C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_or.sv
+  C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_resta.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_shift_l.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_shift_r.sv
+  C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_suma.sv
   C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_xor.sv
-  C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/LAB_1/LAB_1.srcs/sources_1/new/module_alu_fpga.sv
+  C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_fpga.sv
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -54,8 +56,8 @@ read_verilog -library xil_defaultlib -sv {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/LAB_1/LAB_1.srcs/constrs_1/new/constraints_module_alu.xdc
-set_property used_in_implementation false [get_files C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/LAB_1/LAB_1.srcs/constrs_1/new/constraints_module_alu.xdc]
+read_xdc C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/constrs_1/new/constraints_module_alu.xdc
+set_property used_in_implementation false [get_files C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/constrs_1/new/constraints_module_alu.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

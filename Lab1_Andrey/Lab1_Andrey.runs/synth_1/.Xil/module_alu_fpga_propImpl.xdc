@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/LAB_1/LAB_1.srcs/constrs_1/new/constraints_module_alu.xdc rfile:../../../LAB_1.srcs/constrs_1/new/constraints_module_alu.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/constrs_1/new/constraints_module_alu.xdc rfile:../../../Lab1_Andrey.srcs/constrs_1/new/constraints_module_alu.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:14 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN U9 [get_ports {sw_ALUControl_pi[0]}]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]

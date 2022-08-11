@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1660192838">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1660201863">
   <File Type="BITSTR-BMM" Name="module_alu_fpga_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="module_alu_fpga_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="module_alu_fpga_timing_summary_init.rpt"/>
@@ -145,6 +145,13 @@
         <Attr Name="UsedIn" Val="simulation"/>
       </FileInfo>
     </File>
+    <File Path="$PSRCDIR/sources_1/new/module_alu_resta.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PPRDIR/../../../../Vivado/Modulos_sv/module_alu_shift_l.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
@@ -153,6 +160,13 @@
       </FileInfo>
     </File>
     <File Path="$PPRDIR/../../../../Vivado/Modulos_sv/module_alu_shift_r.sv">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/new/module_alu_suma.sv">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

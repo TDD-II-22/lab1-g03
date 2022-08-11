@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Wed Aug 10 22:43:03 2022
+| Date             : Thu Aug 11 01:12:09 2022
 | Host             : Andrey-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file module_alu_fpga_power_routed.rpt -pb module_alu_fpga_power_summary_routed.pb -rpx module_alu_fpga_power_routed.rpx
 | Design           : module_alu_fpga
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 8.273        |
+| Total On-Chip Power (W)  | 8.533        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 8.113        |
-| Device Static (W)        | 0.160        |
+| Dynamic (W)              | 8.369        |
+| Device Static (W)        | 0.164        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 47.3         |
-| Junction Temperature (C) | 62.7         |
+| Max Ambient (C)          | 46.1         |
+| Junction Temperature (C) | 63.9         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,13 +52,14 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.258 |       76 |       --- |             --- |
-|   LUT as Logic |     0.258 |       58 |     63400 |            0.09 |
+| Slice Logic    |     0.300 |       80 |       --- |             --- |
+|   LUT as Logic |     0.295 |       59 |     63400 |            0.09 |
+|   F7/F8 Muxes  |     0.005 |        6 |     63400 |           <0.01 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.308 |       89 |       --- |             --- |
-| I/O            |     7.547 |       46 |       210 |           21.90 |
-| Static Power   |     0.160 |          |           |                 |
-| Total          |     8.273 |          |           |                 |
+| Signals        |     0.354 |       81 |       --- |             --- |
+| I/O            |     7.716 |       46 |       210 |           21.90 |
+| Static Power   |     0.164 |          |           |                 |
+| Total          |     8.533 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -68,16 +69,16 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.692 |       0.626 |      0.066 |
-| Vccaux    |       1.800 |     0.299 |       0.274 |      0.024 |
-| Vcco33    |       3.300 |     2.123 |       2.119 |      0.004 |
+| Vccint    |       1.000 |     0.783 |       0.714 |      0.069 |
+| Vccaux    |       1.800 |     0.305 |       0.281 |      0.025 |
+| Vcco33    |       3.300 |     2.171 |       2.167 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
 | Vcco135   |       1.350 |     0.000 |       0.000 |      0.000 |
 | Vcco12    |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccaux_io |       1.800 |     0.000 |       0.000 |      0.000 |
-| Vccbram   |       1.000 |     0.001 |       0.000 |      0.001 |
+| Vccbram   |       1.000 |     0.002 |       0.000 |      0.002 |
 | MGTAVcc   |       1.000 |     0.000 |       0.000 |      0.000 |
 | MGTAVtt   |       1.200 |     0.000 |       0.000 |      0.000 |
 | Vccadc    |       1.800 |     0.020 |       0.000 |      0.020 |
@@ -135,7 +136,7 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| module_alu_fpga |     8.113 |
+| module_alu_fpga |     8.369 |
 +-----------------+-----------+
 
 

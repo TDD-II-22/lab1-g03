@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date         : Wed Aug 10 22:41:24 2022
+| Date         : Thu Aug 11 01:02:37 2022
 | Host         : Andrey-PC running 64-bit major release  (build 9200)
 | Command      : report_utilization -file module_alu_fpga_utilization_synth.rpt -pb module_alu_fpga_utilization_synth.pb
 | Design       : module_alu_fpga
@@ -36,8 +36,8 @@ Table of Contents
 | Slice Registers         |    0 |     0 |    126800 |  0.00 |
 |   Register as Flip Flop |    0 |     0 |    126800 |  0.00 |
 |   Register as Latch     |    0 |     0 |    126800 |  0.00 |
-| F7 Muxes                |    0 |     0 |     31700 |  0.00 |
-| F8 Muxes                |    0 |     0 |     15850 |  0.00 |
+| F7 Muxes                |    5 |     0 |     31700 |  0.02 |
+| F8 Muxes                |    1 |     0 |     15850 | <0.01 |
 +-------------------------+------+-------+-----------+-------+
 * Warning! The Final LUT count, after physical optimizations and full implementation, is typically lower. Run opt_design after synthesis, if not already completed, for a more realistic count.
 
@@ -146,13 +146,15 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LUT6     |   38 |                 LUT |
+| LUT6     |   42 |                 LUT |
 | OBUF     |   31 |                  IO |
-| LUT4     |   17 |                 LUT |
 | IBUF     |   15 |                  IO |
-| LUT5     |    7 |                 LUT |
-| LUT2     |    7 |                 LUT |
-| LUT3     |    5 |                 LUT |
+| LUT5     |   11 |                 LUT |
+| LUT3     |   11 |                 LUT |
+| LUT2     |    6 |                 LUT |
+| MUXF7    |    5 |               MuxFx |
+| LUT4     |    2 |                 LUT |
+| MUXF8    |    1 |               MuxFx |
 +----------+------+---------------------+
 
 
