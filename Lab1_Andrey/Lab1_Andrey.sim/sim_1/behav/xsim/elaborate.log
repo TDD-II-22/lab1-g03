@@ -1,26 +1,13 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f82f6a25c0634d629e044408acf31fb8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_module_alu_behav xil_defaultlib.tb_module_alu xil_defaultlib.glbl -log elaborate.log 
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto f82f6a25c0634d629e044408acf31fb8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_module_7seg_deco_behav xil_defaultlib.tb_module_7seg_deco xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.pkg_bits
-Compiling module xil_defaultlib.module_alu_mux16a1
-Compiling module xil_defaultlib.module_alu_bandera_z
-Compiling module xil_defaultlib.module_alu_and
-Compiling module xil_defaultlib.module_alu_or
-Compiling module xil_defaultlib.module_alu_suma
-Compiling module xil_defaultlib.module_alu_incre
-Compiling module xil_defaultlib.module_alu_decre
-Compiling module xil_defaultlib.module_alu_not
-Compiling module xil_defaultlib.module_alu_resta
-Compiling module xil_defaultlib.module_alu_xor
-Compiling module xil_defaultlib.module_alu_shift_l
-Compiling module xil_defaultlib.module_alu_shift_r
-Compiling module xil_defaultlib.module_alu
-Compiling module xil_defaultlib.tb_module_alu
+Compiling module xil_defaultlib.module_7seg_decodificador
+Compiling module xil_defaultlib.tb_module_7seg_deco
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_module_alu_behav
+Built simulation snapshot tb_module_7seg_deco_behav
