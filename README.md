@@ -113,8 +113,7 @@ El testbench corresponde a este archivo tb_module_switches_botones_leds.sv
 - `dato2_i`: Entrada de `BITS` bits como entrada al multiplexor.
 - `dato3_i`: Entrada de `BITS` bits como entrada al multiplexor.
 - `select_i`: Entrada de 2 bits para multiplexar 4 entradas.
-- `salida_o`: Salida del multiplexor.
-- 
+- `salida_o`: Salida del multiplexor. 
 #### Constantes
 
 `BITS` Es una constante numérica que almacena un número enero que representa la canrtidad de bits deseados
