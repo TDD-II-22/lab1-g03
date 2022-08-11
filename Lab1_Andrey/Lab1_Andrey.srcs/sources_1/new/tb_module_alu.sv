@@ -127,14 +127,15 @@ module tb_module_alu;
     #2
     
     //corriento derecha A agregando 0
-    ALUControl_i            =       4'h;
+    ALUControl_i            =       4'h9;
     ALUFlagIn_i             =       0;
     #2
     
     //corriento derecha A agregando 1
     ALUFlagIn_i             =       1;
     
-    #2                  
+    #2 
+               
     $finish;
     
     end

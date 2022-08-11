@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1660204107">
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1660232529">
   <File Type="BITSTR-BMM" Name="module_alu_fpga_bd.bmm"/>
   <File Type="OPT-METHODOLOGY-DRC" Name="module_alu_fpga_methodology_drc_opted.rpt"/>
   <File Type="INIT-TIMING" Name="module_alu_fpga_timing_summary_init.rpt"/>
