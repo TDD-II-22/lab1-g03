@@ -1,78 +1,106 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1660239395">
-  <File Type="BITSTR-BMM" Name="module_switches_botones_leds_bd.bmm"/>
-  <File Type="OPT-METHODOLOGY-DRC" Name="module_switches_botones_leds_methodology_drc_opted.rpt"/>
-  <File Type="INIT-TIMING" Name="module_switches_botones_leds_timing_summary_init.rpt"/>
-  <File Type="ROUTE-PWR" Name="module_switches_botones_leds_power_routed.rpt"/>
-  <File Type="PA-TCL" Name="module_switches_botones_leds.tcl"/>
-  <File Type="OPT-TIMING" Name="module_switches_botones_leds_timing_summary_opted.rpt"/>
-  <File Type="OPT-DCP" Name="module_switches_botones_leds_opt.dcp"/>
-  <File Type="ROUTE-PWR-SUM" Name="module_switches_botones_leds_power_summary_routed.pb"/>
-  <File Type="REPORTS-TCL" Name="module_switches_botones_leds_reports.tcl"/>
-  <File Type="OPT-DRC" Name="module_switches_botones_leds_drc_opted.rpt"/>
-  <File Type="OPT-HWDEF" Name="module_switches_botones_leds.hwdef"/>
-  <File Type="PWROPT-DCP" Name="module_switches_botones_leds_pwropt.dcp"/>
-  <File Type="PWROPT-DRC" Name="module_switches_botones_leds_drc_pwropted.rpt"/>
-  <File Type="PWROPT-TIMING" Name="module_switches_botones_leds_timing_summary_pwropted.rpt"/>
-  <File Type="PLACE-DCP" Name="module_switches_botones_leds_placed.dcp"/>
-  <File Type="PLACE-IO" Name="module_switches_botones_leds_io_placed.rpt"/>
-  <File Type="PLACE-CLK" Name="module_switches_botones_leds_clock_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL" Name="module_switches_botones_leds_utilization_placed.rpt"/>
-  <File Type="PLACE-UTIL-PB" Name="module_switches_botones_leds_utilization_placed.pb"/>
-  <File Type="PLACE-CTRL" Name="module_switches_botones_leds_control_sets_placed.rpt"/>
-  <File Type="PLACE-SIMILARITY" Name="module_switches_botones_leds_incremental_reuse_placed.rpt"/>
-  <File Type="PLACE-PRE-SIMILARITY" Name="module_switches_botones_leds_incremental_reuse_pre_placed.rpt"/>
-  <File Type="BG-BGN" Name="module_switches_botones_leds.bgn"/>
-  <File Type="PLACE-TIMING" Name="module_switches_botones_leds_timing_summary_placed.rpt"/>
-  <File Type="POSTPLACE-PWROPT-DCP" Name="module_switches_botones_leds_postplace_pwropt.dcp"/>
-  <File Type="BG-BIN" Name="module_switches_botones_leds.bin"/>
-  <File Type="POSTPLACE-PWROPT-TIMING" Name="module_switches_botones_leds_timing_summary_postplace_pwropted.rpt"/>
-  <File Type="PHYSOPT-DCP" Name="module_switches_botones_leds_physopt.dcp"/>
-  <File Type="PHYSOPT-DRC" Name="module_switches_botones_leds_drc_physopted.rpt"/>
-  <File Type="BITSTR-MSK" Name="module_switches_botones_leds.msk"/>
-  <File Type="PHYSOPT-TIMING" Name="module_switches_botones_leds_timing_summary_physopted.rpt"/>
-  <File Type="ROUTE-ERROR-DCP" Name="module_switches_botones_leds_routed_error.dcp"/>
-  <File Type="ROUTE-DCP" Name="module_switches_botones_leds_routed.dcp"/>
-  <File Type="ROUTE-BLACKBOX-DCP" Name="module_switches_botones_leds_routed_bb.dcp"/>
-  <File Type="ROUTE-DRC" Name="module_switches_botones_leds_drc_routed.rpt"/>
-  <File Type="ROUTE-DRC-PB" Name="module_switches_botones_leds_drc_routed.pb"/>
+<GenRun Id="impl_1" LaunchPart="xc7a100tcsg324-1" LaunchTime="1660240232">
+  <File Type="BITSTR-BMM" Name="module_7seg_display_leds_bd.bmm"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="module_7seg_display_leds_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="module_7seg_display_leds_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR" Name="module_7seg_display_leds_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="module_7seg_display_leds.tcl"/>
+  <File Type="OPT-TIMING" Name="module_7seg_display_leds_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="module_7seg_display_leds_opt.dcp"/>
+  <File Type="ROUTE-PWR-SUM" Name="module_7seg_display_leds_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="module_7seg_display_leds_reports.tcl"/>
+  <File Type="OPT-DRC" Name="module_7seg_display_leds_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="module_7seg_display_leds.hwdef"/>
+  <File Type="PWROPT-DCP" Name="module_7seg_display_leds_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="module_7seg_display_leds_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="module_7seg_display_leds_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="module_7seg_display_leds_placed.dcp"/>
+  <File Type="PLACE-IO" Name="module_7seg_display_leds_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="module_7seg_display_leds_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="module_7seg_display_leds_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="module_7seg_display_leds_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="module_7seg_display_leds_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="module_7seg_display_leds_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="module_7seg_display_leds_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BGN" Name="module_7seg_display_leds.bgn"/>
+  <File Type="PLACE-TIMING" Name="module_7seg_display_leds_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="module_7seg_display_leds_postplace_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="module_7seg_display_leds.bin"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="module_7seg_display_leds_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="module_7seg_display_leds_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="module_7seg_display_leds_drc_physopted.rpt"/>
+  <File Type="BITSTR-MSK" Name="module_7seg_display_leds.msk"/>
+  <File Type="PHYSOPT-TIMING" Name="module_7seg_display_leds_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="module_7seg_display_leds_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="module_7seg_display_leds_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="module_7seg_display_leds_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="module_7seg_display_leds_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="module_7seg_display_leds_drc_routed.pb"/>
   <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
-  <File Type="BITSTR-LTX" Name="module_switches_botones_leds.ltx"/>
-  <File Type="ROUTE-DRC-RPX" Name="module_switches_botones_leds_drc_routed.rpx"/>
-  <File Type="BITSTR-MMI" Name="module_switches_botones_leds.mmi"/>
-  <File Type="ROUTE-METHODOLOGY-DRC" Name="module_switches_botones_leds_methodology_drc_routed.rpt"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="module_switches_botones_leds_methodology_drc_routed.rpx"/>
-  <File Type="BITSTR-SYSDEF" Name="module_switches_botones_leds.sysdef"/>
-  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="module_switches_botones_leds_methodology_drc_routed.pb"/>
-  <File Type="ROUTE-PWR-RPX" Name="module_switches_botones_leds_power_routed.rpx"/>
-  <File Type="ROUTE-STATUS" Name="module_switches_botones_leds_route_status.rpt"/>
-  <File Type="ROUTE-STATUS-PB" Name="module_switches_botones_leds_route_status.pb"/>
-  <File Type="ROUTE-TIMINGSUMMARY" Name="module_switches_botones_leds_timing_summary_routed.rpt"/>
-  <File Type="ROUTE-TIMING-PB" Name="module_switches_botones_leds_timing_summary_routed.pb"/>
-  <File Type="ROUTE-TIMING-RPX" Name="module_switches_botones_leds_timing_summary_routed.rpx"/>
-  <File Type="ROUTE-SIMILARITY" Name="module_switches_botones_leds_incremental_reuse_routed.rpt"/>
-  <File Type="ROUTE-CLK" Name="module_switches_botones_leds_clock_utilization_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW" Name="module_switches_botones_leds_bus_skew_routed.rpt"/>
-  <File Type="ROUTE-BUS-SKEW-PB" Name="module_switches_botones_leds_bus_skew_routed.pb"/>
-  <File Type="ROUTE-BUS-SKEW-RPX" Name="module_switches_botones_leds_bus_skew_routed.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-DCP" Name="module_switches_botones_leds_postroute_physopt.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="module_switches_botones_leds_postroute_physopt_bb.dcp"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="module_switches_botones_leds_timing_summary_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="module_switches_botones_leds_timing_summary_postroute_physopted.pb"/>
-  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="module_switches_botones_leds_timing_summary_postroute_physopted.rpx"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="module_switches_botones_leds_bus_skew_postroute_physopted.rpt"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="module_switches_botones_leds_bus_skew_postroute_physopted.pb"/>
-  <File Type="BG-BIT" Name="module_switches_botones_leds.bit"/>
-  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="module_switches_botones_leds_bus_skew_postroute_physopted.rpx"/>
-  <File Type="BITSTR-RBT" Name="module_switches_botones_leds.rbt"/>
-  <File Type="BITSTR-NKY" Name="module_switches_botones_leds.nky"/>
-  <File Type="BG-DRC" Name="module_switches_botones_leds.drc"/>
-  <File Type="RDI-RDI" Name="module_switches_botones_leds.vdi"/>
+  <File Type="BITSTR-LTX" Name="module_7seg_display_leds.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="module_7seg_display_leds_drc_routed.rpx"/>
+  <File Type="BITSTR-MMI" Name="module_7seg_display_leds.mmi"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="module_7seg_display_leds_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="module_7seg_display_leds_methodology_drc_routed.rpx"/>
+  <File Type="BITSTR-SYSDEF" Name="module_7seg_display_leds.sysdef"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="module_7seg_display_leds_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="module_7seg_display_leds_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="module_7seg_display_leds_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="module_7seg_display_leds_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="module_7seg_display_leds_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="module_7seg_display_leds_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="module_7seg_display_leds_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="module_7seg_display_leds_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="module_7seg_display_leds_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="module_7seg_display_leds_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="module_7seg_display_leds_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="module_7seg_display_leds_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="module_7seg_display_leds_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="module_7seg_display_leds_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="module_7seg_display_leds_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="module_7seg_display_leds_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="module_7seg_display_leds_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="module_7seg_display_leds_bus_skew_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="module_7seg_display_leds_bus_skew_postroute_physopted.pb"/>
+  <File Type="BG-BIT" Name="module_7seg_display_leds.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="module_7seg_display_leds_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-RBT" Name="module_7seg_display_leds.rbt"/>
+  <File Type="BITSTR-NKY" Name="module_7seg_display_leds.nky"/>
+  <File Type="BG-DRC" Name="module_7seg_display_leds.drc"/>
+  <File Type="RDI-RDI" Name="module_7seg_display_leds.vdi"/>
   <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
   <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
     <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/imports/Modulos_sv/module_7seg_decodificador.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab1_Andrey/Modulos_sv/module_7seg_decodificador.sv"/>
+        <Attr Name="ImportTime" Val="1660196740"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Modulos_sv/module_7seg_mux4a1.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab1_Andrey/Modulos_sv/module_7seg_mux4a1.sv"/>
+        <Attr Name="ImportTime" Val="1660196740"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/sources_1/imports/Modulos_sv/module_7seg_display_leds.sv">
+      <FileInfo>
+        <Attr Name="ImportPath" Val="$PPRDIR/../Lab1_Andrey/Modulos_sv/module_7seg_display_leds.sv"/>
+        <Attr Name="ImportTime" Val="1660196740"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
     <File Path="$PSRCDIR/sources_1/new/module_switches_botones_leds.sv">
       <FileInfo>
+        <Attr Name="AutoDisabled" Val="1"/>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>
         <Attr Name="UsedIn" Val="simulation"/>
@@ -80,13 +108,20 @@
     </File>
     <Config>
       <Option Name="DesignMode" Val="RTL"/>
-      <Option Name="TopModule" Val="module_switches_botones_leds"/>
+      <Option Name="TopModule" Val="module_7seg_display_leds"/>
       <Option Name="TopAutoSet" Val="TRUE"/>
     </Config>
   </FileSet>
   <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
     <Filter Type="Constrs"/>
     <File Path="$PSRCDIR/constrs_1/new/Nexys-4-Master-switches-botones-LEDs.xdc">
+      <FileInfo>
+        <Attr Name="UserDisabled" Val="1"/>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <File Path="$PSRCDIR/constrs_1/new/constraints_7seg.xdc">
       <FileInfo>
         <Attr Name="UsedIn" Val="synthesis"/>
         <Attr Name="UsedIn" Val="implementation"/>

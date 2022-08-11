@@ -176,39 +176,113 @@ La simulación de tiempo nos arroja el siguiente resultado:
 
 
 ### 3.4 Ejercicio 4. Decodificador para display de 7 segmentos
-
-#### Testbench
-
-
-El testbench que corresponde a este archivo tb_module_7seg_deco.sv se muestra a continuación, mediante el es observable el correcto funcionamiento del mismo.
-<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/img_simula_display_1.png" width="500" >
-
-
 #### Constantes
 
+- `btn_pi`: Toma valores dependiendo de los botones presionados.
+- `selec_i`: Toma los valores dependiendo de los botones.
+- `sw_pi`: Toma valores dependiendo de los switches activados.
+- `display_po`: Toma valores dependiendo del decodificador y establece los segmentos que se encenderan.
+- `anodo_po`: Tiene un valor fijo en el que solo enciende el primer display.
+- `salida_o`: Toma los valores dependiendo de la selección y la entrada.
+- `entrada_i`: Toma valores dependiendo de la salida del multiplexor.
+- `display_o`: Toma valores dependiendo de la salida del decodificador.
+
+#### 3.4.1 module_7seg_display_leds
+Este modulo se encarga de llamar a los modulos del multiplexor el decodificador y conectarlos, obteniendo las salidas del display de 7 segmentos listos, pero ademas establece como salida ciertos LEDs para mostrar los interruptores que se encuentran activos dependiendo de los botones. 
 
 
-#### 3.1.1 MÃ³dulo tal
+##### 1. Encabezado del módulo
+```SystemVerilog
+module module_7seg_display_leds #(parameter BITS = 16) (
+    input   logic   [1 : 0]             btn_pi,
+    input   logic   [BITS - 1 : 0]      sw_pi,
+    output  logic   [6: 0]              display_po,
+    output  logic   [BITS - 1 : 0]      leds_po,
+    output  logic   [7 : 0]             anodo_po    
+    );
+```
 
 
+##### 2. Parámetros
 
-##### 1. Encabezado del mÃ³dulo
+`BITS`: Es una constante númerica que almacena un número enero que representa el número de bits deseados.
 
+##### 3. Entradas y salidas
+- `btn_pi`:Entrada de 2 bits para la selección dentro del Mux.
+- `sw_pi`: Entradas de los interruptores que se quieran usar.
+- `display_po`: Salida que va directo al display de 7 segmentos.
+- `anodo_po`: Salida de 8 bits que establece cuales displays de los 8 que hay se van a encender.
 
+##### 4. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
 
-##### 2. ParÃ¡metros
+##### 5. Testbench
+El testbench que corresponde a este archivo tb_module_7seg_display_leds.sv
 
+#### 3.4.2 module_7seg_decodificador
+Este modulo se encarga de recibir una entrada de 4 bits y de establecer los segmentos que se encenderan en el display.
+##### 1. Encabezado del módulo
+```SystemVerilog
+module module_7seg_decodificador(
+    
+    input   logic   [3 : 0]   entrada_i,
+    output  logic   [6 : 0]   display_o
+    
+    );
+```
+##### 2. Parámetros
+No tiene parametros.
 
 
 ##### 3. Entradas y salidas
+- `entrada_i`: Entrada de 4 bits dependiendo de la salida del multiplexor.
+- `display_o`: Salida de 7 bits que establece los segmentos que se encienden y apagan.
 
 
 
-##### 4. Criterios de diseÃ±o
 
+##### 4. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
 
 
 ##### 5. Testbench
+El testbench que corresponde a este archivo tb_module_7seg_deco.sv
+#### 3.4.3 module_7seg_mux4a1
+Este modulo se encarga de multiplexar las 4 entradas y dejar salir 1 de estas dependiendo de los bits de selección.
+##### 1. Encabezado del módulo
+```SystemVerilog
+module module_7seg_mux4a1 # (parameter BITS = 16)(
+    input  logic    [BITS - 1 : 0]  entrada_i,
+    input  logic    [1 : 0]         selec_i,
+    output logic    [3 : 0]         salida_o
+    );
+```
+
+##### 2. Parámetros
+- `BITS` Es una constante númerica que almacena un número enero que representa el número de bits deseados
+
+
+##### 3. Entradas y salidas
+- `entrada_i`: Entrada parametrizada que se divide en 4 entradas.
+- `selec_i`: Entrada que establece cual de las 4 entradas se dejara pasar en el multiplexor.
+- `salida_o`: Salida que depende de la selección y las entradas.
+
+`BITS` Es una constante númerica que almacena un número enero que representa el número de bits deseados
+
+
+##### 3. Entradas y salidas
+`entrada_i`: Entrada parametrizada que se divide en 4 entradas.
+`selec_i`: Entrada que establece cual de las 4 entradas se dejara pasar en el multiplexor.
+`salida_o`: Salida que depende de la selección y las entradas.
+
+
+
+##### 4. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+##### 5. Testbench
+Su funcionamiento se comprueba en el testbench del display completo el archivo es tb_module_7seg_display_leds.sv
 
 
 
