@@ -1,0 +1,24 @@
+Vivado Simulator 2019.1
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto 122d8840598a49cb8bfee96a962fd7b9 --incr --debug typical --relax --mt 2 --maxdelay -L xil_defaultlib -L simprims_ver -L secureip --snapshot tb_module_mux4a1_time_synth -transport_int_delays -pulse_r 0 -pulse_int_r 0 -pulse_e 0 -pulse_int_e 0 xil_defaultlib.tb_module_mux4a1 xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-2861] module 'module_mux4a1' does not have a parameter named BITS [C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv:41]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 4 for port 'dato0_i' [C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv:43]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 4 for port 'dato1_i' [C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv:44]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 4 for port 'dato2_i' [C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv:45]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 4 for port 'dato3_i' [C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv:46]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 4 for port 'salida_o' [C:/TDD/lab1-g03/vivado_project/vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv:48]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+INFO: [XSIM 43-3451] SDF backannotation process started with SDF file "tb_module_mux4a1_time_synth.sdf", for root module "tb_module_mux4a1/module_mux4a1_1".
+INFO: [XSIM 43-3452] SDF backannotation was successful for SDF file "tb_module_mux4a1_time_synth.sdf", for root module "tb_module_mux4a1/module_mux4a1_1".
+Time Resolution for simulation is 1ps
+Compiling module simprims_ver.IBUF
+Compiling module simprims_ver.OBUF
+Compiling module simprims_ver.LUT6
+Compiling module xil_defaultlib.module_mux4a1
+Compiling module xil_defaultlib.tb_module_mux4a1
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot tb_module_mux4a1_time_synth
