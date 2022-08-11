@@ -1,0 +1,21 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../Modulos_sv/pkg_bits.sv" \
+"../../../../../Modulos_sv/module_alu.sv" \
+"../../../../LAB_1.srcs/sources_1/new/module_alu_and.sv" \
+"../../../../../Modulos_sv/module_alu_bandera_z.sv" \
+"../../../../../Modulos_sv/module_alu_decre.sv" \
+"../../../../../Modulos_sv/module_alu_incre.sv" \
+"../../../../../Modulos_sv/module_alu_mux16a1.sv" \
+"../../../../../Modulos_sv/module_alu_not.sv" \
+"../../../../LAB_1.srcs/sources_1/new/module_alu_or.sv" \
+"../../../../../Modulos_sv/module_alu_shift_l.sv" \
+"../../../../../Modulos_sv/module_alu_shift_r.sv" \
+"../../../../../Modulos_sv/module_alu_xor.sv" \
+"../../../../LAB_1.srcs/sources_1/new/tb_module_alu.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
