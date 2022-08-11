@@ -16,13 +16,6 @@
 
 
 
-#### Constantes
-
-
-
-#### 3.1.1 Módulo tal
-
-
 
 ##### 1. Encabezado del módulo
 
