@@ -177,7 +177,11 @@ La simulación de tiempo nos arroja el siguiente resultado:
 
 ### 3.4 Ejercicio 4. Decodificador para display de 7 segmentos
 
+#### Testbench
 
+
+El testbench que corresponde a este archivo tb_module_7seg_deco.sv se muestra a continuación, mediante el es observable el correcto funcionamiento del mismo.
+<img src="https://github.com/TDD-II-22/lab1-g03/blob/main/Images/img_simula_display_1.png" width="500" >
 
 
 #### Constantes
