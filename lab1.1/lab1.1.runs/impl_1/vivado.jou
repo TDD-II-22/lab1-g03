@@ -2,11 +2,11 @@
 # Vivado v2019.1 (64-bit)
 # SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
 # IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
-# Start of session at: Wed Aug 10 21:38:33 2022
-# Process ID: 2460
-# Current directory: D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.runs/impl_1
-# Command line: vivado.exe -log module_switches_botones_leds.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source module_switches_botones_leds.tcl -notrace
-# Log file: D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.runs/impl_1/module_switches_botones_leds.vdi
-# Journal file: D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.runs/impl_1\vivado.jou
+# Start of session at: Thu Aug 11 02:30:13 2022
+# Process ID: 20612
+# Current directory: D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.runs/impl_1
+# Command line: vivado.exe -log module_rca_8bits.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source module_rca_8bits.tcl -notrace
+# Log file: D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.runs/impl_1/module_rca_8bits.vdi
+# Journal file: D:/VIVADO/Grupo3/lab1-g03/lab1.1/lab1.1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
-source module_switches_botones_leds.tcl -notrace
+source module_rca_8bits.tcl -notrace
