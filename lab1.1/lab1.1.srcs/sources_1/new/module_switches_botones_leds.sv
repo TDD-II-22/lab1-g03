@@ -21,12 +21,12 @@
 
 
 module module_switches_botones_leds(
-    input        [15:0] switches_pi,
-    input        [3:0]  botones_pi,
-    output logic [3:0]  comb_1_po,
-    output logic [3:0]  comb_2_po,
-    output logic [3:0]  comb_3_po,
-    output logic [3:0]  comb_4_po
+    input        [ 15 : 0 ] switches_pi,
+    input        [ 3 : 0  ]  botones_pi,
+    output logic [ 3 : 0  ]  comb_1_po,
+    output logic [ 3 : 0  ]  comb_2_po,
+    output logic [ 3 : 0  ]  comb_3_po,
+    output logic [ 3 : 0  ]  comb_4_po
     );
     always @ ( * ) begin
         if (botones_pi [ 0 ] == 0 )

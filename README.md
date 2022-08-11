@@ -11,82 +11,58 @@
 
 
 
- 
 ### 3.1 Ejercicio 1. Circuitos Digitales Discretos
 
 
-#### Tipos de variables
-- `t_slope`: Se utiliza para definir el flanco que se detecta, tiene dos miembros: POS_EDGE y NEG_EDGE.
+
 
 #### Constantes
-- `DETECTED_SLOPE`: Define el flanco que se detecta para disparar el pulso. 
-- `OUT_POLARITY`  : Define el valor activo de la salida del pulso.
+
+
 
 #### 3.1.1 Módulo tal
 
-Este modulo hace....
+
 
 ##### 1. Encabezado del módulo
-```SystemVerilog
-module fsm_pulsos(
-    input logic     clk_i,      
-    input logic     rst_n_i,    // Reset input - active low
-    input logic     button_i,   // Button input
-    output logic    pulse_o     // Pulse output 
-    );
-```
+
+
+
 ##### 2. Parámetros
 
-El módulo no posee parámetros. 
+
 
 ##### 3. Entradas y salidas
 
-- `clk_i`: Entrada de reloj del módulo
-- `rst_n_i`: Entrada de reset del módulo, activo en **bajo**.
-- `button_i`: Entrada del flanco a detectar.
-- `pulse_o`: Salida del módulo. Presenta un pulso con nivel `OUT_POLARITY` por un ciclo de reloj cuando se detecta el flanco dado por `DETECTED_SLOPE`.
+
 
 ##### 4. Criterios de diseño
 
-Se seleccionó una arquitectura moore para la máquina de estados y el diagrama de estados es:
 
-<img src="https://raw.githubusercontent.com/pmendozap/Ejemplo_TDD_2_22/main/doc/state_diag.svg" width="300" >
-
-la implementación se hizo en tres bloques always: uno para la variable de estado, uno para la decodificación de siguiente estado y otro para la generación de la salida. 
-
-En esta máquina la salida **NO** está registrada.
 
 ##### 5. Testbench
-
-El testbench .,mkj
-
-
-
-
 
 
 
 ### 3.2 Ejercicio 2. Switches, botones y LEDs
-
-
 #### Tipos de variables
-- `t_slope`: Se utiliza para definir el flanco que se detecta, tiene dos miembros: POS_EDGE y NEG_EDGE.
-
-#### Constantes
-- `DETECTED_SLOPE`: Define el flanco que se detecta para disparar el pulso. 
-- `OUT_POLARITY`  : Define el valor activo de la salida del pulso.
-
-#### 3.1.1 Módulo tal
-
-Este modulo hace....
-
+- `switches_pi`: toma valores de 16 bits dependiendo de los interruptores.
+- `botones_pi`: toma valores de 4 bits dependiendo de los botones.
+- `comb_1_po`: toma valores de 4 bits dependiendo de los primeros 4 interruptores.
+- `comb_1_po`: toma valores de 4 bits dependiendo del segundo grupo de 4 interruptores.
+- `comb_1_po`: toma valores de 4 bits dependiendo del tercer grupo de 4 interruptores.
+- `comb_1_po`: toma valores de 4 bits dependiendo del cuarto grupo de 4 interruptores.
+#### 3.2.1  module_switches_botones_leds
+Lógica combinacional que dependiendo de las entradas de los interruptores enciende los LEDs, pero en caso de que se presione el boton que corresponde al grupo se apaga el grupo de 4 LEDa ain importar la entrada de sus 4 interruptores correspondientes.
 ##### 1. Encabezado del módulo
 ```SystemVerilog
-module fsm_pulsos(
-    input logic     clk_i,      
-    input logic     rst_n_i,    // Reset input - active low
-    input logic     button_i,   // Button input
-    output logic    pulse_o     // Pulse output 
+module module_switches_botones_leds(
+    input        [ 15 : 0 ] switches_pi,
+    input        [ 3 : 0  ]  botones_pi,
+    output logic [ 3 : 0  ]  comb_1_po,
+    output logic [ 3 : 0  ]  comb_2_po,
+    output logic [ 3 : 0  ]  comb_3_po,
+    output logic [ 3 : 0  ]  comb_4_po
     );
 ```
 ##### 2. Parámetros
@@ -94,25 +70,22 @@ module fsm_pulsos(
 El módulo no posee parámetros. 
 
 ##### 3. Entradas y salidas
-
-- `clk_i`: Entrada de reloj del módulo
-- `rst_n_i`: Entrada de reset del módulo, activo en **bajo**.
-- `button_i`: Entrada del flanco a detectar.
-- `pulse_o`: Salida del módulo. Presenta un pulso con nivel `OUT_POLARITY` por un ciclo de reloj cuando se detecta el flanco dado por `DETECTED_SLOPE`.
-
+- `switches_pi`: Entrada de los 16 interuptores físicos.
+- `botones_pi`: Entrada de 4 botones que si se presionan apagan los LEDs.
+- `comb_1_po`: Salida que encenderia los primeros 4 LEDs.
+- `comb_1_po`: Salida que encenderia el segundo grupo de 4 LEDs.
+- `comb_1_po`: Salida que encenderia el tercer grupo de 4 LEDs.
+- `comb_1_po`: Salida que encenderia los ultimos 4 LEDs.
 ##### 4. Criterios de diseño
 
-Se seleccionó una arquitectura moore para la máquina de estados y el diagrama de estados es:
-
-<img src="https://raw.githubusercontent.com/pmendozap/Ejemplo_TDD_2_22/main/doc/state_diag.svg" width="300" >
-
-la implementación se hizo en tres bloques always: uno para la variable de estado, uno para la decodificación de siguiente estado y otro para la generación de la salida. 
-
-En esta máquina la salida **NO** está registrada.
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
 
 ##### 5. Testbench
 
-El testbench .,mkj
+El testbench corresponde a este archivo tb_module_switches_botones_leds.sv 
+
+
+
 
 
 
@@ -125,51 +98,57 @@ El testbench .,mkj
 
 ### 3.3 Ejercicio 3. Multiplexor 4-to-1
 
-
 #### Tipos de variables
-- `t_slope`: Se utiliza para definir el flanco que se detecta, tiene dos miembros: POS_EDGE y NEG_EDGE.
-
+- `dato0_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato1_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato2_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato3_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `select_i`: Entrada de 2 bits para multiplexar 4 entradas.
+- `salida_o`: Salida del multiplexor.
+- 
 #### Constantes
-- `DETECTED_SLOPE`: Define el flanco que se detecta para disparar el pulso. 
-- `OUT_POLARITY`  : Define el valor activo de la salida del pulso.
 
-#### 3.1.1 Módulo tal
+`BITS` Es una constante númerica que almacena un número enero que representa el número de bits deseados
 
-Este modulo hace....
+#### 3.1.1 module_mux4a1
+
+Módulo el cual consiste en un multiplexor 4 a 1 parametrizable según la cantidad de bits se necesite por cada línea de datos
 
 ##### 1. Encabezado del módulo
+
+
 ```SystemVerilog
-module fsm_pulsos(
-    input logic     clk_i,      
-    input logic     rst_n_i,    // Reset input - active low
-    input logic     button_i,   // Button input
-    output logic    pulse_o     // Pulse output 
+module module_mux4a1 #(parameter int BITS = 4)(
+
+    input    logic    [BITS - 1 : 0]    dato0_i,
+    input    logic    [BITS - 1 : 0]    dato1_i,
+    input    logic    [BITS - 1 : 0]    dato2_i,
+    input    logic    [BITS - 1 : 0]    dato3_i,
+    input    logic    [1 : 0]           selec_i,
+    output   logic    [BITS - 1 : 0]    salida_o
     );
 ```
 ##### 2. Parámetros
 
-El módulo no posee parámetros. 
+`BITS` Alamacena la cantidad de bits deseada por cada línea de datos
 
 ##### 3. Entradas y salidas
 
-- `clk_i`: Entrada de reloj del módulo
-- `rst_n_i`: Entrada de reset del módulo, activo en **bajo**.
-- `button_i`: Entrada del flanco a detectar.
-- `pulse_o`: Salida del módulo. Presenta un pulso con nivel `OUT_POLARITY` por un ciclo de reloj cuando se detecta el flanco dado por `DETECTED_SLOPE`.
+- `dato0_i`: Línea de datos que entra al multiplexor.
+- `dato1_i`: Línea de datos que entra al multiplexor.
+- `dato2_i`: Línea de datos que entra al multiplexor.
+- `dato3_i`: Línea de datos que entra al multiplexor.
+- `select_i`: Linea de selector de 2 bits para multiplexar 4 entradas.
+- `salida_o`: Salida del multiplexor
 
 ##### 4. Criterios de diseño
 
-Se seleccionó una arquitectura moore para la máquina de estados y el diagrama de estados es:
-
-<img src="https://raw.githubusercontent.com/pmendozap/Ejemplo_TDD_2_22/main/doc/state_diag.svg" width="300" >
-
-la implementación se hizo en tres bloques always: uno para la variable de estado, uno para la decodificación de siguiente estado y otro para la generación de la salida. 
-
-En esta máquina la salida **NO** está registrada.
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
 
 ##### 5. Testbench
 
-El testbench .,mkj
+El testbench que corresponde a este archivo tb_module_mux4a1.sv y es observable el correcto funcionamiento del multiplexor dado que en la salida, según la combinación del selector, se tiene una linea de datos de todas las que entran al multiplexor. 
+
 
 
 
@@ -183,50 +162,35 @@ El testbench .,mkj
 ### 3.4 Ejercicio 4. Decodificador para display de 7 segmentos
 
 
-#### Tipos de variables
-- `t_slope`: Se utiliza para definir el flanco que se detecta, tiene dos miembros: POS_EDGE y NEG_EDGE.
+
 
 #### Constantes
-- `DETECTED_SLOPE`: Define el flanco que se detecta para disparar el pulso. 
-- `OUT_POLARITY`  : Define el valor activo de la salida del pulso.
+
+
 
 #### 3.1.1 Módulo tal
 
-Este modulo hace....
+
 
 ##### 1. Encabezado del módulo
-```SystemVerilog
-module fsm_pulsos(
-    input logic     clk_i,      
-    input logic     rst_n_i,    // Reset input - active low
-    input logic     button_i,   // Button input
-    output logic    pulse_o     // Pulse output 
-    );
-```
+
+
+
 ##### 2. Parámetros
 
-El módulo no posee parámetros. 
+
 
 ##### 3. Entradas y salidas
 
-- `clk_i`: Entrada de reloj del módulo
-- `rst_n_i`: Entrada de reset del módulo, activo en **bajo**.
-- `button_i`: Entrada del flanco a detectar.
-- `pulse_o`: Salida del módulo. Presenta un pulso con nivel `OUT_POLARITY` por un ciclo de reloj cuando se detecta el flanco dado por `DETECTED_SLOPE`.
+
 
 ##### 4. Criterios de diseño
 
-Se seleccionó una arquitectura moore para la máquina de estados y el diagrama de estados es:
 
-<img src="https://raw.githubusercontent.com/pmendozap/Ejemplo_TDD_2_22/main/doc/state_diag.svg" width="300" >
-
-la implementación se hizo en tres bloques always: uno para la variable de estado, uno para la decodificación de siguiente estado y otro para la generación de la salida. 
-
-En esta máquina la salida **NO** está registrada.
 
 ##### 5. Testbench
 
-El testbench .,mkj
+
 
 
 
@@ -238,50 +202,33 @@ El testbench .,mkj
 ### 3.5 Ejercicio 5. Sumador y ruta crítica
 
 
-#### Tipos de variables
-- `t_slope`: Se utiliza para definir el flanco que se detecta, tiene dos miembros: POS_EDGE y NEG_EDGE.
 
 #### Constantes
-- `DETECTED_SLOPE`: Define el flanco que se detecta para disparar el pulso. 
-- `OUT_POLARITY`  : Define el valor activo de la salida del pulso.
+
+
 
 #### 3.1.1 Módulo tal
 
-Este modulo hace....
+
 
 ##### 1. Encabezado del módulo
-```SystemVerilog
-module fsm_pulsos(
-    input logic     clk_i,      
-    input logic     rst_n_i,    // Reset input - active low
-    input logic     button_i,   // Button input
-    output logic    pulse_o     // Pulse output 
-    );
-```
+
+
+
 ##### 2. Parámetros
 
-El módulo no posee parámetros. 
+
 
 ##### 3. Entradas y salidas
 
-- `clk_i`: Entrada de reloj del módulo
-- `rst_n_i`: Entrada de reset del módulo, activo en **bajo**.
-- `button_i`: Entrada del flanco a detectar.
-- `pulse_o`: Salida del módulo. Presenta un pulso con nivel `OUT_POLARITY` por un ciclo de reloj cuando se detecta el flanco dado por `DETECTED_SLOPE`.
+
 
 ##### 4. Criterios de diseño
 
-Se seleccionó una arquitectura moore para la máquina de estados y el diagrama de estados es:
 
-<img src="https://raw.githubusercontent.com/pmendozap/Ejemplo_TDD_2_22/main/doc/state_diag.svg" width="300" >
-
-la implementación se hizo en tres bloques always: uno para la variable de estado, uno para la decodificación de siguiente estado y otro para la generación de la salida. 
-
-En esta máquina la salida **NO** está registrada.
 
 ##### 5. Testbench
 
-El testbench .,mkj
 
 
 
@@ -295,47 +242,32 @@ El testbench .,mkj
 ### 3.6 Ejercicio 6. Unidad Aritmética Lógica (ALU)
 
 
-#### Tipos de variables
-- `t_slope`: Se utiliza para definir el flanco que se detecta, tiene dos miembros: POS_EDGE y NEG_EDGE.
+
 
 #### Constantes
-- `DETECTED_SLOPE`: Define el flanco que se detecta para disparar el pulso. 
-- `OUT_POLARITY`  : Define el valor activo de la salida del pulso.
+
+
 
 #### 3.1.1 Módulo tal
 
-Este modulo hace....
+
 
 ##### 1. Encabezado del módulo
-```SystemVerilog
-module fsm_pulsos(
-    input logic     clk_i,      
-    input logic     rst_n_i,    // Reset input - active low
-    input logic     button_i,   // Button input
-    output logic    pulse_o     // Pulse output 
-    );
-```
+
+
+
 ##### 2. Parámetros
 
-El módulo no posee parámetros. 
+
 
 ##### 3. Entradas y salidas
 
-- `clk_i`: Entrada de reloj del módulo
-- `rst_n_i`: Entrada de reset del módulo, activo en **bajo**.
-- `button_i`: Entrada del flanco a detectar.
-- `pulse_o`: Salida del módulo. Presenta un pulso con nivel `OUT_POLARITY` por un ciclo de reloj cuando se detecta el flanco dado por `DETECTED_SLOPE`.
+
 
 ##### 4. Criterios de diseño
 
-Se seleccionó una arquitectura moore para la máquina de estados y el diagrama de estados es:
 
-<img src="https://raw.githubusercontent.com/pmendozap/Ejemplo_TDD_2_22/main/doc/state_diag.svg" width="300" >
-
-la implementación se hizo en tres bloques always: uno para la variable de estado, uno para la decodificación de siguiente estado y otro para la generación de la salida. 
-
-En esta máquina la salida **NO** está registrada.
 
 ##### 5. Testbench
 
-El testbench .,mkj
+
