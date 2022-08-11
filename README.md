@@ -337,33 +337,511 @@ una cantidad definida por defecto 10 veces.
 El testbench que corresponde al tb_module_rca_64bits prueba el funcionamiento con la suma de dos valores de 64 bits aleatoriamente
 una n cantidad de veces y ver si logra devolver valores correctos.
 
-### 3.6 Ejercicio 6. Unidad AritmÃ©tica LÃ³gica (ALU)
+### 3.6 Ejercicio 6. Unidad Aritmética Lógica (ALU)
+El modulo se encarga de realizar diversas operaciones lógica y aritmética, el cual muestra a la salida el resultado de una unica operación dependiendo de la unidad de control seleccionada.
 
 
+#### Tipos de variables
+
+- `ALUA_i`: toma el valor de `BITS` bits del operando A
+- `ALUB_i`: toma el valor de `BITS` bits del operando B
+- `ALUFlagIn_i`: toma el valor de la entrada de acarreo
+- `ALUControl_i`: toma los valores para controlar la salida de la ALU
+- `ALUFlags_o`: toma el de acarreo de salida
+- `ALUResult_o`: toma el resultado de la operación obtenida de `BITS` bits
+- `bandera_z_o`: toma el valor de 1 si la salida de la ALU es 0
 
 
-#### Constantes
+#### 3.6.0 Package "pkg_bits"
+
+Este archivo incluye las definiciones para el funcionamiento del sistema. La lista completa:
+
+##### Tipos de variables
+
+- `bits_t`: Se utiliza para definir el numero de bits que van a utilizar las entradas de la ALU
+- `bitsw_t`: Se utiliza para definir el numero de bits que van a utilizar la salida de la ALU
+ 
+##### Constantes
+
+- `BITS_WIDTH`: Define el numero de bits a utilizar en las variables
 
 
-
-#### 3.1.1 MÃ³dulo tal
-
+#### 3.6.1 module_alu
 
 
-##### 1. Encabezado del mÃ³dulo
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu(
+    input    pkg_bits:: bits_t      ALUA_i,
+    input    pkg_bits:: bits_t      ALUB_i,
+    input    logic                  ALUFlagIn_i,
+    input    logic [3 : 0]          ALUControl_i,
+    output   logic                  ALUFlags_o,
+    output   pkg_bits:: bits_t      ALUResult_o,
+    output   logic                  bandera_z_o
+    );
+```
 
 
+#### 2. Parámetros
 
-##### 2. ParÃ¡metros
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
 
 
+#### 4. Entradas y Salidas
 
-##### 3. Entradas y salidas
+- `ALUA_i`: Linea de datos a operar que entra a la ALU
+- `ALUB_i`: Linea de datos a operar que entra a la ALU
+- `ALUFlagIn_i`: Bit de dato de acarreo de entrada
+- `ALUControl_i`: Linea de datos de control de la ALU
+- `ALUFlags_o`: Bit de dato de acarreo de salida
+- `ALUResult_o`: Linea de datos del resultado 
+- `bandera_z_o`: Bit de dato de control de salida
 
-
-
-##### 4. Criterios de diseÃ±o
-
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
 
 
 ##### 5. Testbench
+
+El testbench corresponde a este archivo tb_module_alu.sv
+
+
+#### 3.6.2 module_alu_mux16a1
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+    input           pkg_bits:: bitsw_t           dato0_i,
+    input           pkg_bits:: bitsw_t           dato1_i,
+    input           pkg_bits:: bitsw_t           dato2_i,
+    input           pkg_bits:: bitsw_t           dato3_i,
+    input           pkg_bits:: bitsw_t           dato4_i,
+    input           pkg_bits:: bitsw_t           dato5_i,
+    input           pkg_bits:: bitsw_t           dato6_i,
+    input           pkg_bits:: bitsw_t           dato7_i,
+    input           pkg_bits:: bitsw_t           dato8_i,
+    input           pkg_bits:: bitsw_t           dato9_i,
+    input           pkg_bits:: bitsw_t           dato10_i,
+    input           pkg_bits:: bitsw_t           dato11_i,
+    input           pkg_bits:: bitsw_t           dato12_i,
+    input           pkg_bits:: bitsw_t           dato13_i,
+    input           pkg_bits:: bitsw_t           dato14_i,
+    input           pkg_bits:: bitsw_t           dato15_i,
+    input   logic   [3 : 0]                      ALUControl_i,
+    output          pkg_bits:: bitsw_t           ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `dato0_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato1_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato2_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato3_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato4_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato5_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato6_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato7_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato8_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato9_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato10_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato11_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato12_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato13_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato14_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `dato15_i`: Entrada de `BITS` bits como entrada al multiplexor.
+- `ALUControl_i`: Entrada de 4 bits.
+- `ALUResult_o`: Salida del multiplexor.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+#### 3.6.3 module_alu_bandera_z
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_bandera_z(
+    input   pkg_bits:: bits_t       ALUResult_i,
+    output  logic                   bandera_z_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `ALUResult_i`: Entrada de `BITS` bits.
+- `bandera_z_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+#### 3.6.4 module_alu_and
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_and( 
+    input   pkg_bits:: bits_t       ALUA_i,
+    input   pkg_bits:: bits_t       ALUB_i,
+    output  pkg_bits:: bitsw_t      ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `ALUA_i`: Entrada de `BITS` bits al and.
+- `ALUB_i`: Entrada de `BITS` bits al and.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+#### 3.6.5 module_alu_or
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_or(
+    input   pkg_bits:: bits_t       ALUA_i,
+    input   pkg_bits:: bits_t       ALUB_i,
+    output  pkg_bits:: bitsw_t      ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `ALUA_i`: Entrada de `BITS` bits al and.
+- `ALUB_i`: Entrada de `BITS` bits al and.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+#### 3.6.6 module_alu_suma
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_suma(
+    input  logic                    alu_flagin_i,
+    input  pkg_bits:: bits_t        alu_a_i,
+    input  pkg_bits:: bits_t        alu_b_i,
+    output pkg_bits:: bitsw_t       ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `alu_flagin_i`: Bit de acarreo al sumador.
+- `alu_a_i`: Entrada de `BITS` bits al sumador.
+- `alu_b_ialu_b_i`: Entrada de `BITS` bits al sumador.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+#### 3.6.7 module_alu_incre
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_incre(
+    input   pkg_bits:: bits_t       ALUA_i,
+    input   pkg_bits:: bits_t       ALUB_i,
+    input   logic                   ALUFlagIn_i,
+    output  pkg_bits:: bitsw_t      ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `ALUA_i`: Entrada de `BITS` bits al incrementador.
+- `ALUB_i`: Entrada de `BITS` bits al incrementador.
+- `ALUFlagIn_i`: Bit de seleccion de dato a operar.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+#### 3.6.8 module_alu_decre
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_decre(
+    input   pkg_bits:: bits_t       ALUA_i,
+    input   pkg_bits:: bits_t       ALUB_i,
+    input   logic                   ALUFlagIn_i,
+    output  pkg_bits:: bitsw_t      ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `ALUA_i`: Entrada de `BITS` bits al decrementador.
+- `ALUB_i`: Entrada de `BITS` bits al decrementador.
+- `ALUFlagIn_i`: Bit de seleccion de dato a operar.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+#### 3.6.9 module_alu_not
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_not(
+    input   pkg_bits:: bits_t       ALUA_i,
+    input   pkg_bits:: bits_t       ALUB_i,
+    input   logic                   ALUFlagIn_i,
+    output  pkg_bits:: bitsw_t      ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `ALUA_i`: Entrada de `BITS` bits al not.
+- `ALUB_i`: Entrada de `BITS` bits al not.
+- `ALUFlagIn_i`: Bit de seleccion de dato a operar.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+#### 3.6.10 module_alu_resta
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_resta(
+    input  logic                    alu_flagin_i,
+    input  pkg_bits:: bits_t        alu_a_i,
+    input  pkg_bits:: bits_t        alu_b_i,
+    output pkg_bits:: bitsw_t       ALUResult_o                
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `alu_flagin_i`: Bit de acarreo al restador.
+- `alu_a_i`: Entrada de `BITS` bits al restador.
+- `alu_b_ialu_b_i`: Entrada de `BITS` bits al restador.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+#### 3.6.11 module_alu_xor
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_xor(
+    input   pkg_bits:: bits_t    ALUA_i,
+    input   pkg_bits:: bits_t    ALUB_i,
+    output  pkg_bits:: bitsw_t   ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `ALUA_i`: Entrada de `BITS` bits al not.
+- `ALUB_i`: Entrada de `BITS` bits al not.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+#### 3.6.12 module_alu_shift_l
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_shift_l(
+    input   pkg_bits:: bits_t    ALUA_i,
+    input   pkg_bits:: bits_t    ALUB_i,
+    input   logic                ALUFlagIn_i,
+    output  pkg_bits:: bitsw_t   ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `ALUA_i`: Entrada de `BITS` bits al corrimiento a la izquierda.
+- `ALUB_i`: Entrada de `BITS` bits al corrimiento a la izquierda.
+- `ALUFlagIn_i`: Bit de seleccion de dato a operar.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
+
+#### 3.6.13 module_alu_shift_r
+
+
+##### 1. Encabezado del módulo
+
+```SystemVerilog
+module module_alu_shift_r(
+    input   pkg_bits:: bits_t    ALUA_i,
+    input   pkg_bits:: bits_t    ALUB_i,
+    input   logic                ALUFlagIn_i,
+    output  pkg_bits:: bitsw_t   ALUResult_o
+    );
+```
+
+
+#### 2. Parámetros
+
+`BITS` Es una constante númerica que almacena un número entero que representa el número de bits deseados.
+
+#### 3. Constantes
+Este modulo no tiene constantes
+
+
+#### 4. Entradas y Salidas
+
+- `ALUA_i`: Entrada de `BITS` bits al corrimiento a la derecha.
+- `ALUB_i`: Entrada de `BITS` bits al corrimiento a la izquierda.
+- `ALUFlagIn_i`: Bit de seleccion de dato a operar.
+- `ALUResult_o`: Salida del modulo.
+
+
+#### 5. Criterios de diseño
+Se seleccionó una lógica combinacional para la resolución del ejercicio.
+
