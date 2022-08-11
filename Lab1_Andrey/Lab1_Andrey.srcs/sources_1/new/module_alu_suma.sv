@@ -31,7 +31,7 @@ module module_alu_suma(
     
     logic [ BITS_WIDTH - 1 : 0]     cero = 0;  
     logic [ BITS_WIDTH     : 0]     alu_result_wo;
-    pkg_bits:: bitsw_t              alu_result_o;
+    pkg_bits:: bits_t               alu_result_o;
     logic                           alu_flags_o;
     
     

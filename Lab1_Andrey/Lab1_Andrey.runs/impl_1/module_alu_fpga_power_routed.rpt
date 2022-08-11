@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
-| Date             : Thu Aug 11 01:49:41 2022
+| Date             : Thu Aug 11 09:44:22 2022
 | Host             : Andrey-PC running 64-bit major release  (build 9200)
 | Command          : report_power -file module_alu_fpga_power_routed.rpt -pb module_alu_fpga_power_summary_routed.pb -rpx module_alu_fpga_power_routed.rpx
 | Design           : module_alu_fpga
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 10.270       |
+| Total On-Chip Power (W)  | 10.434       |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 10.074       |
-| Device Static (W)        | 0.196        |
+| Dynamic (W)              | 10.235       |
+| Device Static (W)        | 0.199        |
 | Effective TJA (C/W)      | 4.6          |
-| Max Ambient (C)          | 38.1         |
-| Junction Temperature (C) | 71.9         |
+| Max Ambient (C)          | 37.4         |
+| Junction Temperature (C) | 72.6         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,14 +52,14 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.311 |       79 |       --- |             --- |
-|   LUT as Logic |     0.307 |       60 |     63400 |            0.09 |
+| Slice Logic    |     0.306 |       77 |       --- |             --- |
+|   LUT as Logic |     0.302 |       58 |     63400 |            0.09 |
 |   F7/F8 Muxes  |     0.004 |        5 |     63400 |           <0.01 |
 |   Others       |     0.000 |        2 |       --- |             --- |
-| Signals        |     0.350 |       82 |       --- |             --- |
-| I/O            |     9.413 |       46 |       210 |           21.90 |
-| Static Power   |     0.196 |          |           |                 |
-| Total          |    10.270 |          |           |                 |
+| Signals        |     0.381 |       80 |       --- |             --- |
+| I/O            |     9.548 |       46 |       210 |           21.90 |
+| Static Power   |     0.199 |          |           |                 |
+| Total          |    10.434 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -69,9 +69,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.815 |       0.721 |      0.094 |
-| Vccaux    |       1.800 |     0.371 |       0.343 |      0.028 |
-| Vcco33    |       3.300 |     2.651 |       2.647 |      0.004 |
+| Vccint    |       1.000 |     0.844 |       0.747 |      0.097 |
+| Vccaux    |       1.800 |     0.376 |       0.348 |      0.028 |
+| Vcco33    |       3.300 |     2.689 |       2.685 |      0.004 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -136,7 +136,7 @@ Table of Contents
 +-----------------+-----------+
 | Name            | Power (W) |
 +-----------------+-----------+
-| module_alu_fpga |    10.074 |
+| module_alu_fpga |    10.235 |
 +-----------------+-----------+
 
 

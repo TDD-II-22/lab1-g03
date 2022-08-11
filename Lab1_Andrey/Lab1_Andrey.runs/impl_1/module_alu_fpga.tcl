@@ -60,14 +60,12 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step write_bitstream
 set ACTIVE_STEP write_bitstream
 set rc [catch {
   create_msg_db write_bitstream.pb
   set_param chipscope.maxJobs 2
-  set_param xicom.use_bs_reader 1
   open_checkpoint module_alu_fpga_routed.dcp
   set_property webtalk.parent_dir C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.cache/wt [current_project]
   catch { write_mem_info -force module_alu_fpga.mmi }
