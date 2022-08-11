@@ -250,6 +250,7 @@
     <FileSet Name="sim_1" Type="SimulationSrcs" RelSrcDir="$PSRCDIR/sim_1">
       <Filter Type="Srcs"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
       <File Path="$PSRCDIR/sim_1/new/tb_module_rca_8bits.sv">
         <FileInfo>
           <Attr Name="UsedIn" Val="synthesis"/>
@@ -260,6 +261,12 @@
       <File Path="$PSRCDIR/sim_1/new/tb_module_switches_botones_leds.sv">
         <FileInfo>
           <Attr Name="AutoDisabled" Val="1"/>
+=======
+      <File Path="$PSRCDIR/sim_1/new/tb_module_alu_sumador.sv">
+        <FileInfo>
+          <Attr Name="ImportPath" Val="$PPRDIR/../../../../Proyectos_Vivado/ejemplo-crisart2001/vivado_project/vivado_project.srcs/sim_1/new/tb_module_alu_sumador.sv"/>
+          <Attr Name="ImportTime" Val="1659893602"/>
+>>>>>>> Stashed changes
 =======
       <File Path="$PSRCDIR/sim_1/new/tb_module_alu_sumador.sv">
         <FileInfo>
@@ -346,7 +353,11 @@
       <Config>
         <Option Name="DesignMode" Val="RTL"/>
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         <Option Name="TopModule" Val="tb_module_rca_8bits"/>
+=======
+        <Option Name="TopModule" Val="tb_module_alu_sumador"/>
+>>>>>>> Stashed changes
 =======
         <Option Name="TopModule" Val="tb_module_alu_sumador"/>
 >>>>>>> Stashed changes

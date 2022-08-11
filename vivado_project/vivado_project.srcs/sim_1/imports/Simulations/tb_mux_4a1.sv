@@ -54,7 +54,10 @@ module tb_module_mux4a1;
     //GENEREACION DE DATOS DE PRUEBA
     
     initial begin
+    #10
     repeat(50) begin
+    
+                    #10
                     num = $random%16;
                     dato0_i = num;
                     num = num+1;
@@ -70,11 +73,10 @@ module tb_module_mux4a1;
                     selec_i = 2;
                     #10
                     selec_i = 3;
-                    #10   
-                    
-                    $finish; 
+                    #10
+                    num = num+1;
                 end 
-                      //$finish; 
+                    $finish; 
  end
   
 endmodule

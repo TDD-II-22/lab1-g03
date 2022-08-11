@@ -1,6 +1,10 @@
 Vivado Simulator 2019.1
 Time resolution is 1 ps
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
+=======
+$finish called at time : 40 ns : File "D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_alu_sumador.sv" Line 83
+>>>>>>> Stashed changes
 =======
 $finish called at time : 40 ns : File "D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.srcs/sim_1/new/tb_module_alu_sumador.sv" Line 83
 >>>>>>> Stashed changes
