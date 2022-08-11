@@ -11,12 +11,12 @@
 
 ### 3.2 Ejercicio 2. Switches, botones y LEDs
 #### Tipos de variables
-- `switches_pi`: Entrada de los 16 interuptores físicos.
-- `botones_pi`: Entrada de 4 botones que si se presionan apagan los LEDs.
-- `comb_1_po`: Salida que encenderia los primeros 4 LEDs.
-- `comb_1_po`: Salida que encenderia el segundo grupo de 4 LEDs.
-- `comb_1_po`: Salida que encenderia el tercer grupo de 4 LEDs.
-- `comb_1_po`: Salida que encenderia los ultimos 4 LEDs.
+- `switches_pi`: toma valores de 16 bits dependiendo de los interruptores.
+- `botones_pi`: toma valores de 4 bits dependiendo de los botones.
+- `comb_1_po`: toma valores de 4 bits dependiendo de los primeros 4 interruptores.
+- `comb_1_po`: toma valores de 4 bits dependiendo del segundo grupo de 4 interruptores.
+- `comb_1_po`: toma valores de 4 bits dependiendo del tercer grupo de 4 interruptores.
+- `comb_1_po`: toma valores de 4 bits dependiendo del cuarto grupo de 4 interruptores.
 #### 3.2.1  module_switches_botones_leds
 Lógica combinacional que dependiendo de las entradas de los interruptores enciende los LEDs, pero en caso de que se presione el boton que corresponde al grupo se apaga el grupo de 4 LEDa ain importar la entrada de sus 4 interruptores correspondientes.
 ##### 1. Encabezado del módulo
