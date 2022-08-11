@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Documentos/GitHub/Prueba-repositorio-lab1/lab1/lab1.runs/synth_1'
+HD_PWD='D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.runs/synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log ejercicio_2.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ejercicio_2.tcl
+EAStep vivado -log module_switches_botones_leds.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source module_switches_botones_leds.tcl

@@ -24,7 +24,7 @@ else
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='D:/Documentos/GitHub/Prueba-repositorio-lab1/lab1/lab1.runs/impl_1'
+HD_PWD='D:/Documentos/GitHub/lab1-g03/lab1.1/lab1.1.runs/impl_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log
@@ -41,7 +41,7 @@ EAStep()
 }
 
 # pre-commands:
-/bin/touch .write_bitstream.begin.rst
-EAStep vivado -log ejercicio_2.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ejercicio_2.tcl -notrace
+/bin/touch .init_design.begin.rst
+EAStep vivado -log module_switches_botones_leds.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source module_switches_botones_leds.tcl -notrace
 
 

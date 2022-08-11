@@ -23,9 +23,9 @@ eval( EAInclude(ISEJScriptLib) );
 
 
 // pre-commands:
-ISETouchFile( "write_bitstream", "begin" );
+ISETouchFile( "init_design", "begin" );
 ISEStep( "vivado",
-         "-log ejercicio_2.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source ejercicio_2.tcl -notrace" );
+         "-log module_switches_botones_leds.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source module_switches_botones_leds.tcl -notrace" );
 
 
 

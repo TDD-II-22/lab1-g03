@@ -1,15 +1,13 @@
 Vivado Simulator 2019.1
 Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
-Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto bebd9410257f4f8ebcca8f805aec6143 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_module_alu_restador_behav xil_defaultlib.tb_module_alu_restador xil_defaultlib.glbl -log elaborate.log 
+Running: D:/Xilinx/Vivado/2019.1/bin/unwrapped/win64.o/xelab.exe -wto e15f3d46b1f3470bb6282b72e3ea7fd8 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot tb_module_switches_botones_leds_behav xil_defaultlib.tb_module_switches_botones_leds xil_defaultlib.glbl -log elaborate.log 
 Using 2 slave threads.
 Starting static elaboration
 Completed static elaboration
 Starting simulation data flow analysis
 Completed simulation data flow analysis
 Time Resolution for simulation is 1ps
-Compiling package xil_defaultlib.pkg_bits
-Compiling module xil_defaultlib.module_alu_sumador
-Compiling module xil_defaultlib.module_alu_restador
-Compiling module xil_defaultlib.tb_module_alu_restador
+Compiling module xil_defaultlib.module_switches_botones_leds
+Compiling module xil_defaultlib.tb_module_switches_botones_leds
 Compiling module xil_defaultlib.glbl
-Built simulation snapshot tb_module_alu_restador_behav
+Built simulation snapshot tb_module_switches_botones_leds_behav

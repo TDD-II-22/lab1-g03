@@ -26,10 +26,6 @@ ejercicio_2 DUT (.switches(switches),
                  .botones(botones)
 );
 
-initial begin
-  $dumpfile("tb_ejercicio_2.vcd");
-  $dumpvars(0, tb_ejercicio_2);
-end
 
 initial begin
 	switches=16'b1111_0101_1010_0001;
