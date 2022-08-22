@@ -1,0 +1,9 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"tb_module_mux4a1_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../vivado_project.srcs/sim_1/imports/Simulations/tb_mux_4a1.sv" \
+
+# Do not sort compile order
+nosort

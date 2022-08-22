@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../vivado_project.srcs/sources_1/new/module_deco_a_7.sv" \
+"../../../../vivado_project.srcs/sources_1/new/module_display_7_seg.sv" \
+"../../../../vivado_project.srcs/sources_1/new/module_mux_4_a_1.sv" \
+"../../../../vivado_project.srcs/sim_1/new/tb_module_display_7_seg.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

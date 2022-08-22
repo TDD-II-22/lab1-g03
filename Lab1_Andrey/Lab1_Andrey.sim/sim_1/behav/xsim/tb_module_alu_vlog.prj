@@ -1,0 +1,23 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../../../../../Vivado/Modulos_sv/pkg_bits.sv" \
+"../../../../../../../../Vivado/Modulos_sv/module_alu.sv" \
+"../../../../Lab1_Andrey.srcs/sources_1/new/module_alu_and.sv" \
+"../../../../../../../../Vivado/Modulos_sv/module_alu_bandera_z.sv" \
+"../../../../../../../../Vivado/Modulos_sv/module_alu_decre.sv" \
+"../../../../../../../../Vivado/Modulos_sv/module_alu_incre.sv" \
+"../../../../../../../../Vivado/Modulos_sv/module_alu_mux16a1.sv" \
+"../../../../../../../../Vivado/Modulos_sv/module_alu_not.sv" \
+"../../../../Lab1_Andrey.srcs/sources_1/new/module_alu_or.sv" \
+"../../../../Lab1_Andrey.srcs/sources_1/new/module_alu_resta.sv" \
+"../../../../../../../../Vivado/Modulos_sv/module_alu_shift_l.sv" \
+"../../../../../../../../Vivado/Modulos_sv/module_alu_shift_r.sv" \
+"../../../../Lab1_Andrey.srcs/sources_1/new/module_alu_suma.sv" \
+"../../../../../../../../Vivado/Modulos_sv/module_alu_xor.sv" \
+"../../../../Lab1_Andrey.srcs/sources_1/new/tb_module_alu.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

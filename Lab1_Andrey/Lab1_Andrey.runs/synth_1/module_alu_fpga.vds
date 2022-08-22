@@ -1,0 +1,397 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:49:42 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Thu Aug 11 12:10:51 2022
+# Process ID: 5688
+# Current directory: C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.runs/synth_1
+# Command line: vivado.exe -log module_alu_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source module_alu_fpga.tcl
+# Log file: C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.runs/synth_1/module_alu_fpga.vds
+# Journal file: C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+Sourcing tcl script 'C:/Users/carlo/AppData/Roaming/Xilinx/Vivado/Vivado_init.tcl'
+source module_alu_fpga.tcl -notrace
+Command: synth_design -top module_alu_fpga -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16832 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 689.637 ; gain = 178.113
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'module_alu_fpga' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_fpga.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_mux16a1' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_mux16a1.sv:23]
+INFO: [Synth 8-226] default block is never used [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_mux16a1.sv:48]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_mux16a1' (1#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_mux16a1.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_bandera_z' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_bandera_z.sv:25]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_bandera_z' (2#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_bandera_z.sv:25]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_and' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_and.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_and' (3#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_and.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_or' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_or.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_or' (4#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_or.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_suma' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_suma.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_suma' (5#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_suma.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_incre' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_incre.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_incre' (6#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_incre.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_decre' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_decre.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_decre' (7#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_decre.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_not' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_not.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_not' (8#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_not.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_resta' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_resta.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_resta' (9#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_resta.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_xor' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_xor.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_xor' (10#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_xor.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_shift_l' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_shift_l.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_shift_l' (11#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_shift_l.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_alu_shift_r' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_shift_r.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_shift_r' (12#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_shift_r.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu' (13#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'module_7seg_decodificador' [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_7seg_decodificador.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_7seg_decodificador' (14#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_7seg_decodificador.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'module_alu_fpga' (15#1) [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/sources_1/new/module_alu_fpga.sv:23]
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[7] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[6] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[5] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[4] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[3] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[2] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[1] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[0] driven by constant 0
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[15] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[14] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[13] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[12] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[11] driven by constant 0
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[10] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[9] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[8] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[7] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[6] driven by constant 0
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[5] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[4] driven by constant 0
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[3] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[2] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[1] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 753.973 ; gain = 242.449
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 753.973 ; gain = 242.449
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 753.973 ; gain = 242.449
+---------------------------------------------------------------------------------
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/constrs_1/new/constraints_module_alu.xdc]
+Finished Parsing XDC File [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/constrs_1/new/constraints_module_alu.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.srcs/constrs_1/new/constraints_module_alu.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/module_alu_fpga_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/module_alu_fpga_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 858.043 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.005 . Memory (MB): peak = 858.043 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 858.043 ; gain = 346.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 858.043 ; gain = 346.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 858.043 ; gain = 346.520
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_incre.sv:35]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Vivado/Modulos_sv/module_alu_decre.sv:35]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 858.043 ; gain = 346.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 2     
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 5     
+	   4 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module module_alu_fpga 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 1     
+Module module_alu_bandera_z 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module module_alu_suma 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      5 Bit       Adders := 1     
+Module module_alu_incre 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module module_alu_decre 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module module_alu_not 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+Module module_alu_xor 
+Detailed RTL Component Info : 
++---XORs : 
+	   2 Input      4 Bit         XORs := 1     
+Module module_alu_shift_l 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module module_alu_shift_r 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[7] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[6] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[5] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[4] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[3] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[2] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[1] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port anodo_po[0] driven by constant 0
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[15] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[14] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[13] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[12] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[11] driven by constant 0
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[10] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[9] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[8] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[7] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[6] driven by constant 0
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[5] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[4] driven by constant 0
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[3] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[2] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[1] driven by constant 1
+WARNING: [Synth 8-3917] design module_alu_fpga has port leds_po[0] driven by constant 1
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 858.043 ; gain = 346.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 858.043 ; gain = 346.520
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 858.043 ; gain = 346.520
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:21 ; elapsed = 00:00:22 . Memory (MB): peak = 860.629 ; gain = 349.105
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 876.410 ; gain = 364.887
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 876.410 ; gain = 364.887
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 876.410 ; gain = 364.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 876.410 ; gain = 364.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 876.410 ; gain = 364.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 876.410 ; gain = 364.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT2  |     7|
+|2     |LUT3  |    11|
+|3     |LUT4  |     4|
+|4     |LUT5  |    13|
+|5     |LUT6  |    46|
+|6     |MUXF7 |     5|
+|7     |MUXF8 |     1|
+|8     |IBUF  |    15|
+|9     |OBUF  |    31|
++------+------+------+
+
+Report Instance Areas: 
++------+---------+-------+------+
+|      |Instance |Module |Cells |
++------+---------+-------+------+
+|1     |top      |       |   133|
++------+---------+-------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 876.410 ; gain = 364.887
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 24 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:15 ; elapsed = 00:00:22 . Memory (MB): peak = 876.410 ; gain = 260.816
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 876.410 ; gain = 364.887
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.934 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+45 Infos, 48 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:28 ; elapsed = 00:00:31 . Memory (MB): peak = 889.934 ; gain = 598.777
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 889.934 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/carlo/Andrey/TEC/Semestre_II_2022/Taller_Digitales/Laboratorios/Laboratorio_1/Repositorio/Repositorio1/lab1-g03/Lab1_Andrey/Lab1_Andrey.runs/synth_1/module_alu_fpga.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file module_alu_fpga_utilization_synth.rpt -pb module_alu_fpga_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 11 12:11:27 2022...

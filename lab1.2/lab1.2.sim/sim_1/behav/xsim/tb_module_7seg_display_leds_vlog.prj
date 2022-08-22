@@ -1,0 +1,12 @@
+# compile verilog/system verilog design source files
+sv xil_defaultlib  \
+"../../../../lab1.2.srcs/sources_1/imports/Modulos_sv/module_7seg_decodificador.sv" \
+"../../../../lab1.2.srcs/sources_1/imports/Modulos_sv/module_7seg_display_leds.sv" \
+"../../../../lab1.2.srcs/sources_1/imports/Modulos_sv/module_7seg_mux4a1.sv" \
+"../../../../lab1.2.srcs/sim_1/imports/new/tb_module_7seg_display_leds.sv" \
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort
